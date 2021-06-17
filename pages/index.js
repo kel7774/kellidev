@@ -11,8 +11,10 @@ export default function Home () {
         <meta name='Kelli Landry - Developer' content='Doing, not trying.' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <nav>
+      <nav className={styles.nav}>
+        <Link href='/'>home</Link>
         <Link href='/cv'>cv</Link>
+        <Link href='/contact'>contact</Link>
       </nav>
       <main className={styles.main}>
         <section className={styles.headerContent}>
@@ -28,9 +30,15 @@ export default function Home () {
             className={styles.imgContainer}
           />
         </section>
+        <h4>grind</h4>
         <section className={styles.links}>
-          <a href='https://github.com/kel7774' target='_blank' rel='noopener noreferrer'>github</a>
-          <a href='https://www.linkedin.com/in/kelli-landry89/' target='_blank' rel='noopener noreferrer'>linkedin</a>
+          <span role='img' className='span'>👩🏻‍💻</span><a href='https://github.com/kel7774' target='_blank' rel='noopener noreferrer'>github</a>
+          <span role='img' className='span'>👩🏻‍🎓</span><a href='https://www.linkedin.com/in/kelli-landry89/' target='_blank' rel='noopener noreferrer'>linkedin</a>
+        </section>
+        <h4>chill</h4>
+        <section className={styles.links}>
+          <span role='img' className='span'>📸</span><a href='https://instagram.com/kellifrompierrepart/' target='_blank' rel='noopener noreferrer'>instagram</a>
+          <span role='img' className='span'>🎧</span><a href='https://open.spotify.com/user/tkel1189?si=6cVIAg_NQXKEf66maNIP5w' target='_blank' rel='noopener noreferrer'>spotify</a>
         </section>
       </main>
 
