@@ -1,15 +1,11 @@
-import { useRouter } from 'next/router'
+import Layout from '../../layout/Layout'
 import JobItem from '../../components/JobItem'
 import { jobs } from '../api/jobs'
 import styles from '../../styles/Jobs.module.css'
 
 export default function CV () {
-  const router = useRouter()
-  const handleBackNavigation = (e) => {
-    router.push('/')
-  }
   return (
-    <div className={styles.container}>
+    <Layout>
       <header className={styles.header}>experience</header>
       {jobs.map(job => (
         <JobItem
@@ -20,7 +16,6 @@ export default function CV () {
           duties={job.duties}
         />
       ))}
-      <button className='back-btn' onClick={handleBackNavigation}>back</button>
-    </div>
+    </Layout>
   )
 }

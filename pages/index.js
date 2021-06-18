@@ -1,22 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
+import Layout from '../layout/Layout'
+import LinkSection from '../components/LinkSection'
 import styles from '../styles/Home.module.css'
 
 export default function Home () {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Kelli Landry - Developer</title>
-        <meta name='Kelli Landry - Developer' content='Doing, not trying.' />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
-      <nav className={styles.nav}>
-        <Link href='/'>home</Link>
-        <Link href='/cv'>cv</Link>
-        <Link href='/contact'>contact</Link>
-      </nav>
-      <main className={styles.main}>
+    <div>
+      <Layout className={styles.container}>
+        <Head>
+          <title>Kelli Landry - Developer</title>
+          <meta name='Kelli Landry - Developer' content='Doing, not trying.' />
+          <link rel='icon' href='/favicon.ico' />
+        </Head>
         <section className={styles.headerContent}>
           <header className={styles.header}>
             <h1 className={styles.title}>kelli landry</h1>
@@ -30,21 +26,25 @@ export default function Home () {
             className={styles.imgContainer}
           />
         </section>
-        <h4>grind</h4>
-        <section className={styles.links}>
-          <span role='img' className='span'>👩🏻‍💻</span><a href='https://github.com/kel7774' target='_blank' rel='noopener noreferrer'>github</a>
-          <span role='img' className='span'>👩🏻‍🎓</span><a href='https://www.linkedin.com/in/kelli-landry89/' target='_blank' rel='noopener noreferrer'>linkedin</a>
-        </section>
-        <h4>chill</h4>
-        <section className={styles.links}>
-          <span role='img' className='span'>📸</span><a href='https://instagram.com/kellifrompierrepart/' target='_blank' rel='noopener noreferrer'>instagram</a>
-          <span role='img' className='span'>🎧</span><a href='https://open.spotify.com/user/tkel1189?si=6cVIAg_NQXKEf66maNIP5w' target='_blank' rel='noopener noreferrer'>spotify</a>
-        </section>
-      </main>
-
-      <footer className={styles.footer}>
-        powered by coffee, depression, spotify playlists, long walks to my mailbox, and wings.
-      </footer>
+        <LinkSection
+          category='grind'
+          firstHref='https://github.com/kel7774'
+          firstLinkName='github'
+          firstEmoji='👩🏻‍💻'
+          secondHref='https://linkedin.com/in/kelli-landry89'
+          secondLinkName='linkedin'
+          secondEmoji='👩🏻‍🎓'
+        />
+        <LinkSection
+          category='chill'
+          firstHref='https://instagram.com/kellifrompierrepart'
+          firstLinkName='instagram'
+          firstEmoji='📸'
+          secondHref='https://open.spotify.com/user/tkel1189?si=6cVIAg_NQXKEf66maNIP5w'
+          secondLinkName='spotify'
+          secondEmoji='🎧'
+        />
+      </Layout>
     </div>
   )
 }
