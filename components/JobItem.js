@@ -1,4 +1,4 @@
-import styles from '../../styles/JobItem.module.css'
+import styles from '../styles/JobItem.module.css'
 
 export default function JobItem (props) {
   return (

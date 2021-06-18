@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import JobItem from './JobItem'
+import JobItem from '../../components/JobItem'
 import { jobs } from '../api/jobs'
 import styles from '../../styles/Jobs.module.css'
 
