@@ -7,8 +7,8 @@ export default function JobItem (props) {
       <h3 className='company'>{props.company}</h3>
       <h4 className='duration'>{props.duration}</h4>
       <ul className={styles.list}>
-        {props.duties.map(duty => (
-          <li key={duty}>{duty}</li>
+        {props.duties.map((duty, index) => (
+          <li key={index}>{duty}</li>
         ))}
       </ul>
     </section>

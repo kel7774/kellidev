@@ -4,9 +4,9 @@ export const jobs = [
     company: 'perficient, inc',
     duration: 'january 2021 - present',
     duties: [
-      'Generated data visualizations using Adobe Analytics',
-      'Updated various features in XLRelease for DevOps practice',
-      'Created documentation of release processes'
+      'generated data visualizations using adobe analytics',
+      'updated various features in xlrelease for devops practice',
+      'created documentation of release processes'
     ]
   },
   {
@@ -14,9 +14,9 @@ export const jobs = [
     company: 'gophr, inc',
     duration: 'september 2019 - july 2020',
     duties: [
-      'Assisted lead developers on internal dashboard development',
-      'Built wireframe for React Native customer application',
-      'Integrated GraphQL & Apollo for state management'
+      'assisted lead developers on internal dashboard development',
+      'built wireframe for react native customer application',
+      'integrated graphQL & apollo for state management'
     ]
   },
   {
@@ -24,9 +24,9 @@ export const jobs = [
     company: 'waitr, inc',
     duration: 'march 2019 - september 2019',
     duties: [
-      'Daily pair-programming on social justice seed project',
-      'Introduction to Redux state management',
-      'Introduction into software engineering principles'
+      'daily pair-programming on social justice seed project',
+      'introduction to redux state management',
+      'introduction into software engineering principles'
     ]
   }
 ]
