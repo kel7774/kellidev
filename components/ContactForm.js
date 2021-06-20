@@ -1,20 +1,14 @@
 import { useForm } from 'react-hook-form'
 import { useState } from 'react'
-// import emailjs from 'emailjs-com'
 import styles from '../styles/ContactForm.module.css'
+import { reset } from 'axe-core'
 
 export default function ContactForm () {
-  // const userName = emailjs.init('user_h88MUUL2z7LyThRYixx88')
-  // function sendEmail (e) {
-  //   e.preventDefault()
-  //   emailjs.sendForm('service_t0zbujf', 'template_xc0l2vw', '.contactForm', userName)
-  //     .then((result) => console.log(result.text))
-  //     .catch((error) => console.log(error.text))
-  // }
   const { register, handleSubmit, formState: { errors } } = useForm()
   const [firstName, setFirstName] = useState(undefined)
   const [lastName, setLastName] = useState(undefined)
   const [email, setEmail] = useState(undefined)
+  const [message, setMessage] = useState(undefined)
 
   function handleFirstNameChange (e) {
     setFirstName(e.target.value)
@@ -25,8 +19,26 @@ export default function ContactForm () {
   function handleEmailChange (e) {
     setEmail(e.target.value)
   }
+
+  function handleMessageChange (e) {
+    setMessage(e.target.value)
+  }
+
+  const sendMail = async (data) => {
+    try {
+      await fetch('../pages/api/email.ts', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      setTimeout(() => reset(), 2000)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   return (
-    <form className='contactForm'>
+    <form className='contactForm' onSubmit={handleSubmit(sendMail)}>
       <div className={styles.formField}>
         <label htmlFor='firstName'>first name</label>
         <input
@@ -34,7 +46,7 @@ export default function ContactForm () {
           name='firstName'
           placeholder='first name'
           value={firstName}
-          onChange={handleFirstNameChange}
+          onChange={() => handleFirstNameChange}
           {...register('firstName', { required: true })}
         />
         {errors.firstName && 'first name is required'}
@@ -46,7 +58,7 @@ export default function ContactForm () {
           name='lastName'
           placeholder='last name'
           value={lastName}
-          onChange={handleLastNameChange}
+          onChange={() => handleLastNameChange}
           {...register('lastName', { required: true })}
         />
         {errors.lastName && 'last name is required'}
@@ -58,7 +70,7 @@ export default function ContactForm () {
           name='email'
           placeholder='email'
           value={email}
-          onChange={handleEmailChange}
+          onChange={() => handleEmailChange}
           {...register('email', {
             required: 'required',
             pattern: {
@@ -75,6 +87,8 @@ export default function ContactForm () {
           placeholder='message ...'
           className={styles.textarea}
           name='message'
+          value={message}
+          onChange={() => handleMessageChange}
           {...register('message', {
             required: 'message required',
             minLength: { value: 100, message: 'Must enter at least 100 characters' }
