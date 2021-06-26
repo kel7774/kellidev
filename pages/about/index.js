@@ -1,5 +1,6 @@
 import Layout from '../../layout/Layout'
 import { useState } from 'react'
+import { NextSeo } from 'next-seo'
 import classes from '../../styles/About.module.css'
 
 export default function About () {
@@ -12,6 +13,11 @@ export default function About () {
   }
   return (
     <Layout>
+      <NextSeo
+        title='Kelli Landry - About'
+        description='An about page about Kelli Landry with an option for a short or long bio.'
+        canonical='http://kellilandry.dev/about'
+      />
       <nav className={classes.nav}>
         <button onClick={showShort}>short</button>
         <button onClick={showLong}>long</button>

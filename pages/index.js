@@ -1,15 +1,21 @@
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 import Layout from '../layout/Layout'
 import styles from '../styles/Home.module.css'
 import MainContent from '../components/MainContent'
 export default function Home () {
   return (
     <Layout className={styles.container}>
-      <Head>
-        <title>Kelli Landry - Developer</title>
-        <meta name='Kelli Landry - Developer' content='Doing, not trying.' />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
+      <NextSeo
+        title='Kelli Landry - Home'
+        description='Kelli Landry, Web Developer'
+        canonical='http://www.kellilandry.dev'
+        additionalLinkTags={[
+          {
+            rel: 'icon',
+            href: '/favicon.ico'
+          }
+        ]}
+      />
       <main className={styles.main}>
         <MainContent />
       </main>

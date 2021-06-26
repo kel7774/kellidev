@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import Layout from '../../layout/Layout'
 import JobItem from '../../components/JobItem'
 import { jobs } from '../api/jobs'
@@ -6,6 +7,11 @@ import classes from '../../styles/Jobs.module.css'
 export default function CV () {
   return (
     <Layout>
+      <NextSeo
+        title='Kelli Landry - CV'
+        description='A list of all relevant jobs and experiences Kelli Landry has had in the past 5 years'
+        canonical='http://kellilandry.dev/cv'
+      />
       <div className={classes.cv}>
         <section>
           <h1 className={classes.experienceHeader}>experience</h1>
