@@ -2,18 +2,15 @@ import { useState } from 'react'
 import styles from '../styles/ContactForm.module.css'
 
 export default function ContactForm () {
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = e => {
     e.preventDefault()
-    console.log('sending')
-    const data = {
-      firstName,
-      lastName,
+    let data = {
+      name,
       email,
       message
     }
@@ -25,12 +22,9 @@ export default function ContactForm () {
       },
       body: JSON.stringify(data)
     }).then((res) => {
-      console.log('Response received!')
       if (res.status === 200) {
-        console.log('Response succeeded')
         setSubmitted(true)
-        setFirstName('')
-        setLastName('')
+        setName('')
         setEmail('')
         setMessage('')
       }
@@ -40,28 +34,16 @@ export default function ContactForm () {
   return (
     <form className='contactForm'>
       <div className={styles.formField}>
-        <label htmlFor='firstName'>first name</label>
+        <label htmlFor='firstName'>name</label>
         <input
           type='text'
-          name='firstName'
-          placeholder='first name'
-          onChange={(e) => setFirstName(e.target.value)}
-          value={firstName}
+          name='name'
+          placeholder='name'
+          onChange={(e) => setName(e.target.value)}
+          value={name}
           // {...register('firstName', { required: true })}
         />
-        {/* {errors.firstName && 'first name is required'} */}
-      </div>
-      <div className={styles.formField}>
-        <label htmlFor='lastName'>last name</label>
-        <input
-          type='text'
-          name='lastName'
-          placeholder='last name'
-          onChange={(e) => setLastName(e.target.value)}
-          value={lastName}
-          // {...register('lastName', { required: true })}
-        />
-        {/* {errors.lastName && 'last name is required'} */}
+        {/* {errors.name && 'name is required'} */}
       </div>
       <div className={styles.formField}>
         <label htmlFor='email'>email</label>
