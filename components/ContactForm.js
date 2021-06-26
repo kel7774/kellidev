@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 import styles from '../styles/ContactForm.module.css'
 
 export default function ContactForm () {
@@ -6,6 +7,7 @@ export default function ContactForm () {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const router = useRouter()
 
   const handleSubmit = e => {
     e.preventDefault()
@@ -29,6 +31,7 @@ export default function ContactForm () {
         setMessage('')
       }
     })
+    router.push('/thanks')
   }
 
   return (

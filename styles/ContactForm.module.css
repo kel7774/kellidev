@@ -1,15 +1,16 @@
-.form input,
-.form textarea {
-  width: 20rem;
-  border-radius: 0.3rem;
+.formField input,
+.formField textarea,
+.submit {
+  border-radius: 0.4rem;
 }
 
-.form input {
+.formField textarea {
+  height: 7rem;
+  resize: none;
+}
+
+.formField input {
   height: 2rem;
-}
-
-.form textarea {
-  height: 10rem;
 }
 
 .formField {
@@ -18,6 +19,11 @@
   margin: 1rem 0;
 }
 
-.textarea {
-  resize:none;
+.submit {
+  height: 2rem;
+  width: 5rem;
+  letter-spacing: 0.2rem;
+  text-transform: lowercase;
+  background-color: black;
+  color: white;
 }
