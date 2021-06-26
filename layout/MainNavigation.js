@@ -5,6 +5,7 @@ export default function MainNavigation () {
     <header>
       <nav className={styles.nav}>
         <Link href='/'>home</Link>
+        <Link href='/about'>about</Link>
         <Link href='/cv'>cv</Link>
         <Link href='/contact'>contact</Link>
       </nav>

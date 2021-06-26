@@ -29,6 +29,16 @@ a:hover {
   text-decoration: underline;
 }
 
+button {
+  height: 2rem;
+  width: 5rem;
+  letter-spacing: 0.2rem;
+  text-transform: lowercase;
+  background-color: black;
+  color: white;
+  border-radius: 0.3rem;
+}
+
 * {
   box-sizing: border-box;
 }

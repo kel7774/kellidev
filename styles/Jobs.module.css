@@ -1,0 +1,16 @@
+.cv {
+  display: flex;
+  flex-direction: row;
+}
+
+.cv section {
+  margin: 0 1rem;
+}
+
+.experienceHeader {
+  margin: 0 1rem;
+}
+
+.education {
+  align-self: center;
+}
