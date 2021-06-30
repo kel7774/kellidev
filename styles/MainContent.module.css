@@ -1,18 +1,24 @@
-.headerContent {
-  padding: 5rem;
+.contentContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
   font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
+  margin: 0;
 }
 
 .imgContainer {

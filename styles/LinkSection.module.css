@@ -2,15 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .links {
   font-weight: bold;
   justify-content: center;
-}
-
-.links h4 {
-  letter-spacing: 0.3rem;
 }
 
 .links a {

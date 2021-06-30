@@ -4,7 +4,7 @@ import styles from '../styles/MainContent.module.css'
 
 export default function MainContent () {
   return (
-    <div>
+    <div className={styles.contentContainer}>
       <section className={styles.headerContent}>
         <header className={styles.header}>
           <h1 className={styles.title}>kelli landry</h1>
@@ -19,7 +19,6 @@ export default function MainContent () {
         />
       </section>
       <LinkSection
-        category='grind'
         firstHref='https://github.com/kel7774'
         firstLinkName='github'
         firstEmoji='👩🏻‍💻'
@@ -28,7 +27,6 @@ export default function MainContent () {
         secondEmoji='👩🏻‍🎓'
       />
       <LinkSection
-        category='chill'
         firstHref='https://instagram.com/kellifrompierrepart'
         firstLinkName='instagram'
         firstEmoji='📸'

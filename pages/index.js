@@ -16,9 +16,7 @@ export default function Home () {
           }
         ]}
       />
-      <main className={styles.main}>
-        <MainContent />
-      </main>
+      <MainContent className={styles.main} />
     </Layout>
   )
 }
