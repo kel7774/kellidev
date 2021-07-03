@@ -2,6 +2,7 @@ import { NextSeo } from 'next-seo'
 import Layout from '../layout/Layout'
 import styles from '../styles/Home.module.css'
 import MainContent from '../components/MainContent'
+
 export default function Home () {
   return (
     <Layout className={styles.container}>
