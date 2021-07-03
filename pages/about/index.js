@@ -29,7 +29,7 @@ export default function About () {
         </section>}
       {hidden &&
         <section>
-          <h2>long-winded</h2>
+          <h1>long-winded</h1>
           <h3>welcome in! where&apos;s your seatbelt?</h3>
           <p>hello! my name is kelli landry! thanks for coming along for the ride. first off, i swear i know how to capitalize. but there&apos;s a freedom when you don&apos;t. anyway, you&apos;re here for the long version, so strap in; it&apos;s a little bumpy.</p>
           <h3>feel the burn(out)</h3>

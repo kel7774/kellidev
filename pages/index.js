@@ -1,11 +1,13 @@
 import { NextSeo } from 'next-seo'
+import dynamic from 'next/dynamic'
 import Layout from '../layout/Layout'
-import styles from '../styles/Home.module.css'
 import MainContent from '../components/MainContent'
-
+const ThemeToggle = dynamic(() => import('../components/ThemeToggle'), {
+  ssr: false
+})
 export default function Home () {
   return (
-    <Layout className={styles.container}>
+    <Layout>
       <NextSeo
         title='Kelli Landry - Home'
         description='Kelli Landry, Web Developer'
@@ -17,7 +19,8 @@ export default function Home () {
           }
         ]}
       />
-      <MainContent className={styles.main} />
+      <ThemeToggle />
+      <MainContent />
     </Layout>
   )
 }

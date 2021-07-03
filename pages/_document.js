@@ -19,7 +19,7 @@ class MyDocument extends Document {
     document.body.dataset.theme = getUserPreference();
   `
     return (
-      <Html>
+      <Html lang='en'>
         <Head />
         <body>
           <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />

@@ -60,8 +60,8 @@ const ThemeToggle = () => {
       title={`Change to ${inactiveTheme} mode`}
     >
       <ToggleThumb activeTheme={activeTheme} />
-      <span>🌙</span>
-      <span>☀️</span>
+      <span aria-hidden='true'>🌙</span>
+      <span aria-hidden='true'>☀️</span>
     </ToggleButton>
   )
 }
