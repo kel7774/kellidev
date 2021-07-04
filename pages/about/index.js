@@ -2,7 +2,6 @@ import Layout from '../../layout/Layout'
 import { useState } from 'react'
 import { NextSeo } from 'next-seo'
 import classes from '../../styles/About.module.css'
-
 export default function About () {
   const [hidden, setHidden] = useState(false)
   const showLong = () => {
@@ -19,8 +18,8 @@ export default function About () {
         canonical='http://kellilandry.dev/about'
       />
       <nav className={classes.nav}>
-        <button onClick={showShort}>short</button>
-        <button onClick={showLong}>long</button>
+        <button className={classes.button} onClick={showShort}>short</button>
+        <button className={classes.button} onClick={showLong}>long</button>
       </nav>
       {!hidden &&
         <section>

@@ -14,3 +14,8 @@
 .education {
   align-self: center;
 }
+
+.education h1,
+.experience h1 {
+  text-decoration: underline;
+}

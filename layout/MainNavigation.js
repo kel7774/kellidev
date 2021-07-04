@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import styles from '../styles/MainNavigation.module.css'
-
 export default function MainNavigation () {
   return (
     <nav className={styles.nav}>

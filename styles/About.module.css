@@ -1,5 +1,8 @@
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+}
+
+.button {
+  margin: 0 1rem;
 }

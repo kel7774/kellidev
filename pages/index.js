@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo'
-import dynamic from 'next/dynamic'
 import Layout from '../layout/Layout'
 import MainContent from '../components/MainContent'
+import dynamic from 'next/dynamic'
 const ThemeToggle = dynamic(() => import('../components/ThemeToggle'), {
   ssr: false
 })

@@ -13,7 +13,7 @@ export default function CV () {
         canonical='http://kellilandry.dev/cv'
       />
       <div className={classes.cv}>
-        <section>
+        <section className={classes.experience}>
           <h1 className={classes.experienceHeader}>experience</h1>
           {jobs.map(job => (
             <JobItem
