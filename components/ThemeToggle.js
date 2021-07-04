@@ -1,8 +1,8 @@
 import styled from '@emotion/styled'
 import { useState, useEffect } from 'react'
 const ToggleButton = styled.button`
-  --toggle-width: 80px;
-  --toggle-height: 38px;
+  --toggle-width: 74px;
+  --toggle-height: 37px;
   --toggle-padding: 4px;
   position: relative;
   display: flex;

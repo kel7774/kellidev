@@ -35,7 +35,7 @@ export default function ContactForm () {
   }
 
   return (
-    <form className='contactForm'>
+    <form className={styles.contactForm}>
       <div className={styles.formField}>
         <label htmlFor='firstName'>name</label>
         <input

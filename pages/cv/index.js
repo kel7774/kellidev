@@ -1,12 +1,11 @@
 import { NextSeo } from 'next-seo'
-import Layout from '../../layout/Layout'
 import JobItem from '../../components/JobItem'
 import { jobs } from '../api/jobs'
 import classes from '../../styles/Jobs.module.css'
 
 export default function CV () {
   return (
-    <Layout>
+    <div>
       <NextSeo
         title='Kelli Landry - CV'
         description='A list of all relevant jobs and experiences Kelli Landry has had in the past 5 years'
@@ -35,6 +34,6 @@ export default function CV () {
           <p>completed web development track</p>
         </section>
       </div>
-    </Layout>
+    </div>
   )
 }

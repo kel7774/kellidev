@@ -1,4 +1,3 @@
-import Layout from '../../layout/Layout'
 import { useState } from 'react'
 import { NextSeo } from 'next-seo'
 import classes from '../../styles/About.module.css'
@@ -11,7 +10,7 @@ export default function About () {
     setHidden(false)
   }
   return (
-    <Layout>
+    <div>
       <NextSeo
         title='Kelli Landry - About'
         description='An about page about Kelli Landry with an option for a short or long bio.'
@@ -52,6 +51,6 @@ export default function About () {
           <h3>and without further adieu...</h3>
           <p>congrats! you made it! there is <em>definitely</em> more to the story, and much more to be written as i progress into more in depth projects, and learn more intricate and complex technologies. i had a co-worker once tell me that i am tenacious and through pure grit, i will try my best to figure it out. whatever it should be. the problem at hand. the bug. the new feature needing to be implemented. the test that needs to pass (or fail.. we like negative tests, too). the user story that needs more sub-tasks. or just if we should make another pot of coffee. the point is, this is not the end, you&apos;ve reached the beginning, and i hope to continue writing this story about my journey in this industry.</p>
         </section>}
-    </Layout>
+    </div>
   )
 }
