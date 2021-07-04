@@ -7,6 +7,7 @@ export default function Layout (props) {
       <MainNavigation />
       <main className={styles.main}>
         {props.children}
+        <div style={{ paddingBottom: '4rem' }} />
         <Footer />
       </main>
     </div>

@@ -10,15 +10,15 @@ export default function About () {
     setHidden(false)
   }
   return (
-    <div>
+    <div className='about-page-container'>
       <NextSeo
         title='Kelli Landry - About'
         description='An about page about Kelli Landry with an option for a short or long bio.'
         canonical='http://kellilandry.dev/about'
       />
       <nav className={classes.nav}>
-        <button className={classes.button} onClick={showShort}>short</button>
-        <button className={classes.button} onClick={showLong}>long</button>
+        <button className={classes.shortButton} onClick={showShort}>short</button>
+        <button className={classes.longButton} onClick={showLong}>long</button>
       </nav>
       {!hidden &&
         <section>
