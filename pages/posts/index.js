@@ -1,6 +1,10 @@
 import { GraphQLClient } from 'graphql-request'
 import Link from 'next/link'
-const graphcms = new GraphQLClient('https://api-us-east-1.graphcms.com/v2/ckqegbt2ezupe01xtcbr80b9g/master')
+import Image from 'next/image'
+import formatDate from '../helpers/formatDate'
+import classes from '../../styles/PostPreview.module.css'
+
+const graphcms = new GraphQLClient(process.env.customKey)
 
 export async function getStaticProps () {
   const { posts } = await graphcms.request(
@@ -32,12 +36,20 @@ const Posts = ({ posts }) => {
     <div>
       {posts.map((post) => {
         return (
-          <div key={post.id}>
+          <article key={post.id} className={classes.article}>
             <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]'>
-              <a><div>{post.title}</div></a>
+              <a>
+                <div className={classes.image}>
+                  <Image src={post.coverImage.url} width='200px' height='200px' alt='Cover Photo for blog post' />
+                </div>
+                <div>{post.title}</div>
+              </a>
             </Link>
-            <div>{post.excerpt}</div>
-          </div>
+            <section className={classes.section}>
+              <div>{formatDate(post.date)}</div>
+              <div>{post.excerpt}</div>
+            </section>
+          </article>
         )
       })}
     </div>

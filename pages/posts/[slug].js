@@ -1,6 +1,10 @@
 import { GraphQLClient } from 'graphql-request'
+import { RichText } from '@graphcms/rich-text-react-renderer'
+import Link from 'next/link'
+import formatDate from '../helpers/formatDate'
+import classes from '../../styles/Post.module.css'
 
-const graphcms = new GraphQLClient('https://api-us-east-1.graphcms.com/v2/ckqegbt2ezupe01xtcbr80b9g/master')
+const graphcms = new GraphQLClient(process.env.customKey)
 
 export async function getStaticProps ({ params }) {
   const { post } = await graphcms.request(
@@ -11,6 +15,7 @@ export async function getStaticProps ({ params }) {
         title
         content{
           text
+          raw
         }
         slug
         coverImage {
@@ -70,10 +75,16 @@ export async function getStaticPaths () {
 
 const Post = ({ post }) => {
   return (
-    <div>
-      <div>{post.title}</div>
-      <div>{post.content.text}</div>
-    </div>
+    <section>
+      <h1>{post.title}</h1>
+      <article className={classes.article}>
+        <RichText
+          content={post.content.raw.children}
+        />
+        <h4>written by {post.author.name} on {formatDate(post.date)}</h4>
+      </article>
+      <Link href='/posts'>back to posts</Link>
+    </section>
   )
 }
 

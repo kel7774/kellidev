@@ -1,0 +1,15 @@
+.article {
+  padding: 3rem 1rem;
+  border: 0.1rem solid var(--color-text-primary);
+  border-radius: 1rem;
+}
+
+.image {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+}
+
+.section {
+  padding-top: 1rem;
+}

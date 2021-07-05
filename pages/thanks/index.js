@@ -4,7 +4,7 @@ export default function Thanks () {
     <section>
       <h1>thank you!</h1>
       <p>your email was sent successfully. i will get back to you as soon as possible.</p>
-      <Link href='/'>back</Link>
+      <Link href='/'>back home</Link>
     </section>
   )
 }
