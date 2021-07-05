@@ -6,6 +6,7 @@ export default function MainNavigation () {
       <Link href='/'>home</Link>
       <Link href='/about'>about</Link>
       <Link href='/cv'>cv</Link>
+      <Link href='/posts'>blog</Link>
       <Link href='/contact'>contact</Link>
     </nav>
   )
