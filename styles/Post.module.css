@@ -2,8 +2,23 @@
   padding-bottom: 1rem;
 }
 
-.img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.ol {
+  padding-left: 0rem;
+}
+
+.li {
+  line-height: 1.5rem;
+  padding: 0.7rem;
+}
+
+.p {
+  line-height: 1.5rem;
+}
+
+.code {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.1rem;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
 }

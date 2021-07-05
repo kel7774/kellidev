@@ -10,7 +10,7 @@ export async function getStaticProps () {
   const { posts } = await graphcms.request(
     `
     query Posts() {
-      posts {
+      posts (orderBy: publishedAt_DESC) {
         id
         date
         title
@@ -38,7 +38,7 @@ const Posts = ({ posts }) => {
         return (
           <article key={post.id} className={classes.article}>
             <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]'>
-              <a>
+              <a className={classes.a}>
                 <div className={classes.image}>
                   <Image src={post.coverImage.url} width='200px' height='200px' alt='Cover Photo for blog post' />
                 </div>
@@ -47,7 +47,7 @@ const Posts = ({ posts }) => {
             </Link>
             <section className={classes.section}>
               <div>{formatDate(post.date)}</div>
-              <div>{post.excerpt}</div>
+              <div className={classes.excerpt}>{post.excerpt}</div>
             </section>
           </article>
         )
