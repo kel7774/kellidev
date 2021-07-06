@@ -89,7 +89,17 @@ const Post = ({ post }) => {
           content={post.content.raw.children}
           renderers={{
             code: ({ children }) => <code className={classes.code}>{children}</code>,
-            Image: ({ src, altText, height, width }) => <Image src={src} alt={altText} height={height} width={width} />,
+            img: ({ src, altText, height, width }) => (
+              <div
+                style={{
+                  width: '100%',
+                  display: 'flex',
+                  justifyContent: 'center'
+                }}
+              >
+                <Image src={src} alt={altText} height={height} width={width} objectFit='cover' />
+              </div>
+            ),
             ol: ({ children }) => <ol className={classes.ol}>{children}</ol>,
             li: ({ children }) => <li className={classes.li}>{children}</li>,
             p: ({ children }) => <p className={classes.p}>{children}</p>
