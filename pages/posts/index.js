@@ -1,4 +1,5 @@
 import { GraphQLClient } from 'graphql-request'
+import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import Image from 'next/image'
 import formatDate from '../helpers/formatDate'
@@ -34,6 +35,11 @@ export async function getStaticProps () {
 const Posts = ({ posts }) => {
   return (
     <div>
+      <NextSeo
+        title='Kelli Landry - Blog'
+        description='A blog written by Kelli Landry about self-taught frontend web development'
+        canonical='http://kellilandry.dev/posts'
+      />
       {posts.map((post) => {
         return (
           <article key={post.id} className={classes.article}>

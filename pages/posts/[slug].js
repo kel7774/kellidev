@@ -1,5 +1,6 @@
 /* eslint-disable react/display-name */
 import { GraphQLClient } from 'graphql-request'
+import { NextSeo } from 'next-seo'
 import { RichText } from '@graphcms/rich-text-react-renderer'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -78,6 +79,10 @@ export async function getStaticPaths () {
 const Post = ({ post }) => {
   return (
     <section>
+      <NextSeo
+        title={`Kelli Landry - Blog: ${post.title}`}
+        canonical={`http://kellilandry.dev/posts/${post.slug}`}
+      />
       <h1>{post.title}</h1>
       <article className={classes.article}>
         <RichText
