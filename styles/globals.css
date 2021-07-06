@@ -8,6 +8,11 @@ body {
   transition: background 0.25s ease-in-out;
 }
 
+::selection {
+  background-color: var(--color-bg-toggle);
+  color: var(--color-bg-primary);
+}
+
 body,
 body[data-theme="light"] {
   --color-text-primary: #27201a;
