@@ -8,6 +8,7 @@ export default function MainNavigation () {
       <Link href='/cv'>cv</Link>
       <Link href='/posts'>blog</Link>
       <Link href='/contact'>contact</Link>
+      <Link href='/photos'>photos</Link>
     </nav>
   )
 }
