@@ -1,32 +1,39 @@
-import InstagramFeed from '../../components/InstagramFeed'
+import Head from 'next/head'
+import Image from 'next/image'
 import Instagram from 'instagram-web-api'
+import classes from '../../styles/Photos.module.css'
 
-export default function Photos ({ instagramPosts }) {
+export default function Home ({ posts }) {
   return (
-    <InstagramFeed instagramPosts={instagramPosts} />
+    <div>
+      <Head>
+        <title>Instagram Posts</title>
+      </Head>
+
+      <h1>Instagram Posts</h1>
+      <ul className={classes.ul}>
+        {posts.map(({ node }, i) => {
+          return (
+            <li key={i} className={classes.li}>
+              <Image src={node.thumbnail_src} height={300} width={300} alt='image' />
+            </li>
+          )
+        })}
+      </ul>
+    </div>
   )
 }
 
 export async function getStaticProps (context) {
-  const client = new Instagram({
-    username: process.env.IG_USERNAME,
-    password: process.env.IG_PASSWORD
+  const client = new Instagram({ username: process.env.NEXT_PUBLIC_IG_USERNAME, password: process.env.NEXT_PUBLIC_IG_PASSWORD })
+  await client.login()
+  const response = await client.getPhotosByUsername({
+    username: process.env.NEXT_PUBLIC_IG_USERNAME
   })
-  let posts = []
-  try {
-    await client.login()
-    const instagram = await client.getPhotosByUsername({
-      username: process.env.IG_USERNAME
-    })
-    if (instagram["user"]["edge_owner_to_timeline_media"]["count"] > 0) {
-      posts = instagram["user"]["edge_owner_to_timeline_media"]["edges"]
-    }
-  } catch (err) {
-    console.log('Something went wrong while logging into Instagram', err)
-  }
+
   return {
     props: {
-      instagramPosts: posts
+      posts: response.user.edge_owner_to_timeline_media.edges
     }
   }
 }
