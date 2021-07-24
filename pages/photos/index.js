@@ -3,6 +3,12 @@
 // import Instagram from 'instagram-web-api'
 // import classes from '../../styles/Photos.module.css'
 
+export default function Photos () {
+  return (
+    <div>potental page w/ graphcms</div>
+  )
+}
+
 // export default function Home ({ posts }) {
 //   return (
 //     <div>
