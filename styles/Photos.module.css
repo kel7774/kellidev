@@ -1,8 +1,19 @@
 .ul {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: -2.5rem;
 }
 
 .li {
   list-style-type: none;
+  margin: 1rem 0;
+}
+
+.img {
+  border-radius: 10rem;
+}
+
+.section {
+  margin-top: 1rem;
 }
