@@ -11,7 +11,7 @@ export async function getStaticProps () {
   const { posts } = await graphcms.request(
     `
     query Posts() {
-      posts (orderBy: publishedAt_DESC) {
+      posts (orderBy: date_DESC) {
         id
         date
         title
