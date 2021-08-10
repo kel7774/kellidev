@@ -22,3 +22,13 @@
   color: var(--color-text-primary);
   background-color: var(--color-bg-primary);
 }
+
+.img {
+  width: '100%';
+  display: 'flex';
+  justify-content: center;
+}
+
+.hello {
+  background-color:coral;
+}

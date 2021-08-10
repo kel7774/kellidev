@@ -102,7 +102,8 @@ const Post = ({ post }) => {
             ),
             ol: ({ children }) => <ol className={classes.ol}>{children}</ol>,
             li: ({ children }) => <li className={classes.li}>{children}</li>,
-            p: ({ children }) => <p className={classes.p}>{children}</p>
+            p: ({ children }) => <p className={classes.p}>{children}</p>,
+            class: ({ children }) => <div className={classes.hello}>{children}</div>
           }}
         />
         <h4>written by {post.author.name} on {formatDate(post.date)}</h4>
