@@ -33,6 +33,7 @@ export async function getStaticProps () {
 }
 
 const Posts = ({ posts }) => {
+  console.log('posts', posts)
   return (
     <div>
       <NextSeo

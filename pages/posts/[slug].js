@@ -4,10 +4,23 @@ import { NextSeo } from 'next-seo'
 import { RichText } from '@graphcms/rich-text-react-renderer'
 import Link from 'next/link'
 import Image from 'next/image'
+import styled from 'styled-components'
 import formatDate from '../helpers/formatDate'
 import classes from '../../styles/Post.module.css'
 
 const graphcms = new GraphQLClient(process.env.customKey)
+
+const OrderedList = styled.ol`
+  padding-left: 0rem;
+`
+
+const StyledCode = styled.code`
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.15rem;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+`
 
 export async function getStaticProps ({ params }) {
   const { post } = await graphcms.request(
@@ -77,6 +90,7 @@ export async function getStaticPaths () {
 }
 
 const Post = ({ post }) => {
+  console.log('post: ', post)
   return (
     <section>
       <NextSeo
@@ -88,7 +102,7 @@ const Post = ({ post }) => {
         <RichText
           content={post.content.raw.children}
           renderers={{
-            code: ({ children }) => <code className={classes.code}>{children}</code>,
+            code: ({ children }) => <StyledCode>{children}</StyledCode>,
             img: ({ src, altText, height, width }) => (
               <div
                 style={{
@@ -100,10 +114,9 @@ const Post = ({ post }) => {
                 <Image src={src} alt={altText} height={height} width={width} objectFit='cover' />
               </div>
             ),
-            ol: ({ children }) => <ol className={classes.ol}>{children}</ol>,
+            ol: ({ children }) => <OrderedList>{children}</OrderedList>,
             li: ({ children }) => <li className={classes.li}>{children}</li>,
             p: ({ children }) => <p className={classes.p}>{children}</p>,
-            class: ({ children }) => <div className={classes.hello}>{children}</div>
           }}
         />
         <h4>written by {post.author.name} on {formatDate(post.date)}</h4>

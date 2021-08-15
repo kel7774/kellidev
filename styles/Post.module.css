@@ -17,8 +17,8 @@
 
 .code {
   display: inline-block;
-  font-size: 0.7rem;
-  padding: 0.1rem;
+  font-size: 0.8rem;
+  padding: 0.15rem;
   color: var(--color-text-primary);
   background-color: var(--color-bg-primary);
 }
@@ -27,8 +27,4 @@
   width: '100%';
   display: 'flex';
   justify-content: center;
-}
-
-.hello {
-  background-color:coral;
 }
