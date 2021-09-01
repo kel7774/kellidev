@@ -1,8 +1,16 @@
 export const jobs = [
   {
+    position: 'software developer',
+    company: 'turner industries',
+    duration: 'september 2021 - present',
+    duties: [
+      'new job, who dis!'
+    ]
+  },
+  {
     position: 'associate technical consultant',
     company: 'perficient, inc',
-    duration: 'january 2021 - present',
+    duration: 'january 2021 - july 2021',
     duties: [
       'generated data visualizations using adobe analytics',
       'updated various features in xlrelease for devops practice',

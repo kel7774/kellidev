@@ -23,8 +23,6 @@
   background-color: var(--color-bg-primary);
 }
 
-.img {
-  width: '100%';
-  display: 'flex';
-  justify-content: center;
+.orangeBackground {
+  background-color: orange;
 }
