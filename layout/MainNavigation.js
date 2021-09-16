@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import styles from '../styles/MainNavigation.module.css'
+// import styles from '../styles/MainNavigation.module.css'
 export default function MainNavigation () {
   return (
-    <nav className={styles.nav}>
+    <nav>
       <Link href='/'>home</Link>
       <Link href='/about'>about</Link>
       <Link href='/cv'>cv</Link>
