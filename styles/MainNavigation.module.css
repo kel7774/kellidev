@@ -1,0 +1,23 @@
+.listStyle {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+
+.linkStyle {
+    text-transform: uppercase;
+}
+
+.btn {
+    border-radius: 5px transparent;
+    margin: 0 .4rem;
+}
+
+.btn:hover {
+    background-image: linear-gradient(
+            to right bottom, 
+            rgba(40, 216, 141, .1) 0%,
+            rgba(50, 138, 100, .9) 100%,
+            transparent 50%);
+
+}

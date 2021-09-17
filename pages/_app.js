@@ -1,6 +1,6 @@
 import Layout from '../layout/Layout'
 import dynamic from 'next/dynamic'
-import '../styles/Global.scss'
+import '../styles/global.css'
 const ThemeToggle = dynamic(() => import('../components/ThemeToggle'), {
   ssr: false
 })
