@@ -1,7 +1,7 @@
 export default function Footer () {
   const year = new Date().getFullYear()
   return (
-    <footer className='bg-green-800 w-full flex flex-row p-14 justify-evenly font-sans'>
+    <footer className='bg-indigo-800 w-full flex flex-row py-12 justify-evenly font-sans'>
       <p>&copy; {year} kellidev</p>
       <section className='flex flex-row '>
         <div>

@@ -5,8 +5,7 @@ module.exports = {
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
       'serif': ['nunito', 'serif']
-    },
-    extend: {},
+    }
   },
   variants: {
     extend: {},
