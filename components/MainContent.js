@@ -10,7 +10,7 @@ export default function MainContent () {
           <h1 className={styles.title}>kelli landry</h1>
           <h2>web developer in lafayette, la</h2>
         </header>
-        <div className={styles.imgContainer}>
+        {/* <div className={styles.imgContainer}>
           <Image
             src='/KelliProfile_50.png'
             width={330}
@@ -18,7 +18,7 @@ export default function MainContent () {
             alt='Kelli Landry Profile Picture'
             className={styles.img}
           />
-        </div>
+        </div> */}
       </section>
     </div>
   )
