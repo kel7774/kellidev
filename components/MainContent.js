@@ -20,26 +20,6 @@ export default function MainContent () {
           />
         </div>
       </section>
-      <Link
-        href='https://github.com/kel7774'
-        name='github'
-        emoji='👩🏻‍💻'
-      />
-      <Link
-        href='https://linkedin.com/in/kelli-landry89'
-        name='linkedin'
-        emoji='👩🏻‍🎓'
-      />
-      <Link
-        href='https://instagram.com/kellifrompierrepart'
-        name='instagram'
-        emoji='📸'
-      />
-      <Link
-        href='https://open.spotify.com/user/tkel1189?si=6cVIAg_NQXKEf66maNIP5w'
-        name='spotify'
-        emoji='🎧'
-      />
     </div>
   )
 }
