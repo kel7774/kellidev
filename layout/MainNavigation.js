@@ -8,7 +8,7 @@ export default function MainNavigation () {
   }
   return (
     <>
-      <nav className='flex items-center flex-wrap bg-white p-3 shadow-2xl'>
+      <nav className='flex items-center flex-wrap bg-white p-3'>
 
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4'>

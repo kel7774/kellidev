@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import Link from './Link'
+import Link from 'next/link'
 
 export default function MainContent () {
   return (
-    <div className='bg-gradient-to-b from from-indigo-100 via-indigo-400 to-indigo-500 w-screen h-screen'>
+    <div>
       <section className='flex flex-col text-center'>
         <header>
           <h1 className='font-sans text-8xl lowercase'>Kelli Landry</h1>
