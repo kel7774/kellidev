@@ -1,12 +1,10 @@
-import styles from '../styles/JobItem.module.css'
-
 export default function JobItem (props) {
   return (
-    <section className='job-container'>
-      <h2 className='position'>{props.position}</h2>
-      <h3 className='company'>{props.company}</h3>
-      <h4 className='duration'>{props.duration}</h4>
-      <ul className={styles.list}>
+    <section className>
+      <h2 className='text-2xl text-indigo-600 font-light mt-4'>{props.position}</h2>
+      <h3 className='text-lg text-indigo-600 font-light'>{props.company}</h3>
+      <h4 className='text-sm text-indigo-600 font-light'>{props.duration}</h4>
+      <ul className>
         {props.duties.map((duty, index) => (
           <li key={index}>{duty}</li>
         ))}
