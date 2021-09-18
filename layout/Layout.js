@@ -6,7 +6,7 @@ export default function Layout(props) {
   return (
     <div className='font-sans'>
       <MainNavigation />
-      <main className='min-h-screen bg-gradient-to-b from from-indigo-100 via-indigo-400 to-indigo-500 '>
+      <main className='min-h-screen bg-gradient-to-bl from from-indigo-100 via-indigo-200 to-indigo-400 '>
         {props.children}
       </main>
       <Footer />

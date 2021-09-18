@@ -1,7 +1,7 @@
 export default function Footer () {
   const year = new Date().getFullYear()
   return (
-    <footer className='bg-indigo-800 h-14 flex flex-row px-14 justify-between items-center'>
+    <footer className='bg-indigo-500 h-14 flex flex-row px-14 justify-between items-center'>
       <section>&copy; {year} kellidev</section>
       <section className='flex flex-row '>
         <div>
