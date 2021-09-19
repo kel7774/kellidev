@@ -5,7 +5,7 @@ export default function MainContent () {
     <section>
       <header className='flex flex-col text-right'>
         <div>
-          <h1 className='font-sans text-8xl lowercase'>Kelli Landry</h1>
+          <h1 className='font-sans font-light text-8xl lowercase'>Kelli Landry</h1>
           <h2 className='font-sans text-4xl lowercase'>Web Developer</h2>
           <h3 className='font-sans text-2xl lowercase'><span>📍</span>lafayette, la</h3>
         </div>
@@ -18,6 +18,7 @@ export default function MainContent () {
           layout='responsive'
           quality={65}
           alt='Picture of Kelli in New Mexico'
+          className='shadow-offset-lime'
         />
       </div>
     </section>

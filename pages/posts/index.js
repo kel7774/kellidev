@@ -3,7 +3,6 @@ import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import Image from 'next/image'
 import formatDate from '../helpers/formatDate'
-import classes from '../../styles/PostPreview.module.css'
 
 const graphcms = new GraphQLClient(process.env.customKey)
 
@@ -34,7 +33,7 @@ export async function getStaticProps () {
 
 const Posts = ({ posts }) => {
   return (
-    <div>
+    <div className='flex flex-row justify-evenly flex-wrap py-4 px-4'>
       <NextSeo
         title='Kelli Landry - Blog'
         description='A blog written by Kelli Landry about self-taught frontend web development'
@@ -42,18 +41,18 @@ const Posts = ({ posts }) => {
       />
       {posts.map((post) => {
         return (
-          <article key={post.id} className={classes.article}>
-            <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]'>
-              <a className={classes.a}>
-                <div className={classes.image}>
-                  <Image src={post.coverImage.url} width='200px' height='200px' alt='Cover Photo for blog post' />
+          <article className='pb-7' key={post.id}>
+            <section className='flex flex-col w-60 h-full border border-indigo-600 bg-indigo-200 rounded-xl hover:bg-indigo-600 hover:text-indigo-200 text-center p-5'>
+              <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]' className='text-indigo-600 font-light'>
+                <div className='font-light text-sm'>
+                  <Image src={post.coverImage.url} height='200' width='200' alt='Cover Photo for blog post' className='rounded-xl hover:cursor-pointer' />
+                  {post.title}
                 </div>
-                <div>{post.title}</div>
-              </a>
-            </Link>
-            <section className={classes.section}>
-              <div>{formatDate(post.date)}</div>
-              <div className={classes.excerpt}>{post.excerpt}</div>
+              </Link>
+              <div>
+                <div className='text-xs font-bold'>{formatDate(post.date)}</div>
+                <div className='text-xs'>{post.excerpt}</div>
+              </div>
             </section>
           </article>
         )
