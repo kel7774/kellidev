@@ -5,7 +5,6 @@ import { RichText } from '@graphcms/rich-text-react-renderer'
 import Link from 'next/link'
 import Image from 'next/image'
 import formatDate from '../helpers/formatDate'
-import classes from '../../styles/Post.module.css'
 
 const graphcms = new GraphQLClient(process.env.customKey)
 
@@ -78,37 +77,38 @@ export async function getStaticPaths () {
 
 const Post = ({ post }) => {
   return (
-    <section>
+    <section className='p-16'>
       <NextSeo
         title={`Kelli Landry - Blog: ${post.title}`}
         canonical={`http://kellilandry.dev/posts/${post.slug}`}
       />
-      <h1>{post.title}</h1>
-      <article className={classes.article}>
+      <section className='flex flex-row justify-between items-center h-12'>
+        <h1 className='text-lg font-light text-indigo-500'>{post.title}</h1>
+        <h4 className='text-sm text-indigo-600 font-light'>{formatDate(post.date)}</h4>
+        <div className='text-indigo-800 font-semibold cursor-pointer hover:underline'>
+          <Link href='/posts'>back to posts</Link>
+        </div>
+      </section>
+      <article className='pb-4 text-left'>
         <RichText
           content={post.content.raw.children}
           renderers={{
-            code: ({ children }) => <code className={classes.code}>{children}</code>,
+            code: ({ children }) => <code className='inline-block text-xs p-0.5 bg-indigo-500 text-indigo-200'>{children}</code>,
             img: ({ src, altText, height, width }) => (
-              <div
-                style={{
-                  width: '100%',
-                  display: 'flex',
-                  justifyContent: 'center'
-                }}
-              >
+              <div className='w-full flex justify-center'>
                 <Image src={src} alt={altText} height={height} width={width} objectFit='cover' />
               </div>
             ),
-            ol: ({ children }) => <ol className={classes.ol}>{children}</ol>,
-            li: ({ children }) => <li className={classes.li}>{children}</li>,
-            p: ({ children }) => <p className={classes.p}>{children}</p>
+            ol: ({ children }) => <ol className='pl-0'>{children}</ol>,
+            li: ({ children }) => <li className='p-3'>{children}</li>,
+            p: ({ children }) => <p className='leading-7 my-7'>{children}</p>,
+            a: ({ children }) => <a className='text-indigo-800 font-semibold cursor-pointer hover:underline'>{children}</a>
           }}
         />
-        {/* {post.content.text} */}
-        <h4>written by {post.author.name} on {formatDate(post.date)}</h4>
       </article>
-      <Link href='/posts'>back to posts</Link>
+      <div className='text-indigo-800 font-semibold cursor-pointer hover:underline'>
+        <Link href='/posts'>back to posts</Link>
+      </div>
     </section>
   )
 }

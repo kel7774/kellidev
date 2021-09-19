@@ -45,7 +45,7 @@ const Posts = ({ posts }) => {
             <section className='flex flex-col w-60 h-full border border-indigo-600 bg-indigo-200 rounded-xl hover:bg-indigo-600 hover:text-indigo-200 text-center p-5'>
               <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]' className='text-indigo-600 font-light'>
                 <div className='font-light text-sm'>
-                  <Image src={post.coverImage.url} height='200' width='200' alt='Cover Photo for blog post' className='rounded-xl hover:cursor-pointer' />
+                  <Image src={post.coverImage.url} height='200' width='200' alt='Cover Photo for blog post' className='rounded-xl cursor-pointer' />
                   {post.title}
                 </div>
               </Link>
