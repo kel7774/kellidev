@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useRouter } from 'next/router'
-import styles from '../styles/ContactForm.module.css'
 
 export default function ContactForm () {
   const [name, setName] = useState('')
@@ -35,8 +34,8 @@ export default function ContactForm () {
   }
 
   return (
-    <form className={styles.contactForm}>
-      <div className={styles.formField}>
+    <form>
+      <div className='flex flex-col pb-4'>
         <label htmlFor='firstName'>name</label>
         <input
           type='text'
@@ -44,11 +43,12 @@ export default function ContactForm () {
           placeholder='name'
           onChange={(e) => setName(e.target.value)}
           value={name}
+          className='rounded-lg h-8 w-60 bg-indigo-50'
           // {...register('firstName', { required: true })}
         />
         {/* {errors.name && 'name is required'} */}
       </div>
-      <div className={styles.formField}>
+      <div className='flex flex-col pb-4'>
         <label htmlFor='email'>email</label>
         <input
           type='email'
@@ -56,6 +56,7 @@ export default function ContactForm () {
           placeholder='email'
           onChange={(e) => setEmail(e.target.value)}
           value={email}
+          className='rounded-lg h-8 w-60 bg-indigo-50'
           // {...register('email', {
           //   required: 'required',
           //   pattern: {
@@ -66,14 +67,14 @@ export default function ContactForm () {
         />
         {/* {errors.email && 'email is required'} */}
       </div>
-      <div className={styles.formField}>
+      <div className='flex flex-col pb-4'>
         <label htmlFor='message'>message</label>
         <textarea
           placeholder='message ...'
-          className={styles.textarea}
           name='message'
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          className='rounded-lg bg-indigo-50 resize-none h-28 w-60 focus:border-indigo-500'
           // {...register('message', {
           //   required: 'message required',
           //   minLength: { value: 100, message: 'Must enter at least 100 characters' }
@@ -81,7 +82,7 @@ export default function ContactForm () {
         />
         {/* {errors.textarea && 'a message of at least 100 characters is required'} */}
       </div>
-      <input type='submit' className={styles.submit} onClick={(e) => handleSubmit(e)} />
+      <input type='submit' className='uppercase tracking-wide rounded-lg p-2 bg-indigo-500 text-indigo-200 hover:bg-indigo-200 hover:text-indigo-500 cursor-pointer' onClick={(e) => handleSubmit(e)} />
     </form>
   )
 }

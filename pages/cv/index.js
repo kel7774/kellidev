@@ -27,10 +27,10 @@ export default function CV () {
           <h1 className='text-4xl text-indigo-600 font-light'>education</h1>
           <h2 className='text-2xl text-indigo-600 font-light mt-4'>university of louisiana - lafayette</h2>
           <h3 className='text-lg text-indigo-600 font-light mt-3'>august 2008 - december 2012</h3>
-          <p>bachelor of science in child and family studies</p>
+          <p className='font-light'>bachelor of science in child and family studies</p>
           <h2 className='text-2xl text-indigo-600 font-light mt-4'>bloc.io</h2>
           <h3 className='text-lg text-indigo-600 font-light mt-3'>june 2018 - february 2019</h3>
-          <p>completed web development track</p>
+          <p className='font-light'>completed web development track</p>
         </section>
       </div>
     </div>

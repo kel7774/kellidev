@@ -6,7 +6,7 @@ export default function JobItem (props) {
       <h4 className='text-sm text-indigo-600 font-light'>{props.duration}</h4>
       <ul className>
         {props.duties.map((duty, index) => (
-          <li key={index}>{duty}</li>
+          <li className='font-light' key={index}>{duty}</li>
         ))}
       </ul>
     </section>

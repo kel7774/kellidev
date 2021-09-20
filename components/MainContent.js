@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function MainContent () {
   return (
     <section>
-      <header className='flex flex-col text-right'>
+      <header className='flex flex-col text-right px-3'>
         <div>
           <h1 className='font-sans font-light text-8xl lowercase'>Kelli Landry</h1>
           <h2 className='font-sans text-4xl lowercase'>Web Developer</h2>
