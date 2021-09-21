@@ -11,15 +11,15 @@ export default function About () {
   }
 
   return (
-    <div>
+    <div className='flex flex-col justify-center'>
       <NextSeo
         title='Kelli Landry - About'
         description='An about page about Kelli Landry with an option for a short or long bio.'
         canonical='http://kellilandry.dev/about'
       />
       <nav className='flex flex-row justify-center'>
-        <button className='mt-8 mr-8 shadow-sm border-2 rounded-2xl p-3 w-36 border-indigo-600 bg-indigo-600 text-white font-light uppercase tracking-widest hover:bg-indigo-300 hover:text-gray-900' onClick={showShort}>short</button>
-        <button className='mt-8 mr-8 shadow-sm border-2 rounded-2xl p-3 w-36 border-indigo-600 bg-indigo-600 text-white font-light uppercase tracking-widest hover:bg-indigo-300 hover:text-gray-900' onClick={showLong}>long</button>
+        <button className='mt-8 mr-8 shadow-sm border-2 rounded-2xl p-3 w-36 border-indigo-500 bg-indigo-500 text-white font-light uppercase tracking-widest hover:bg-indigo-300 hover:text-gray-900' onClick={showShort}>short</button>
+        <button className='mt-8 mr-8 shadow-sm border-2 rounded-2xl p-3 w-36 border-indigo-500 bg-indigo-500 text-white font-light uppercase tracking-widest hover:bg-indigo-300 hover:text-gray-900' onClick={showLong}>long</button>
       </nav>
       {!hidden &&
         <section className='text-left px-28 py-20'>

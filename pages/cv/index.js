@@ -4,7 +4,7 @@ import { jobs } from '../api/jobs'
 
 export default function CV () {
   return (
-    <div>
+    <div className='justify-center flex flex-row'>
       <NextSeo
         title='Kelli Landry - CV'
         description='A list of all relevant jobs and experiences Kelli Landry has had in the past 5 years'

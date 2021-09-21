@@ -85,7 +85,7 @@ const Post = ({ post }) => {
       <section className='flex flex-row justify-between items-center h-12'>
         <h1 className='text-lg font-light text-indigo-500'>{post.title}</h1>
         <h4 className='text-sm text-indigo-600 font-light'>{formatDate(post.date)}</h4>
-        <div className='text-indigo-800 font-semibold cursor-pointer hover:underline'>
+        <div className='text-indigo-800 font-light cursor-pointer hover:underline'>
           <Link href='/posts'>back to posts</Link>
         </div>
       </section>
@@ -101,12 +101,12 @@ const Post = ({ post }) => {
             ),
             ol: ({ children }) => <ol className='pl-0'>{children}</ol>,
             li: ({ children }) => <li className='p-3'>{children}</li>,
-            p: ({ children }) => <p className='leading-7 my-7'>{children}</p>,
-            a: ({ children }) => <a className='text-indigo-800 font-semibold cursor-pointer hover:underline'>{children}</a>
+            p: ({ children }) => <p className='leading-7 my-7 font-light'>{children}</p>,
+            a: ({ children }) => <a className='text-indigo-800 font-light cursor-pointer hover:underline'>{children}</a>
           }}
         />
       </article>
-      <div className='text-indigo-800 font-semibold cursor-pointer hover:underline'>
+      <div className='text-indigo-800 font-light cursor-pointer hover:underline'>
         <Link href='/posts'>back to posts</Link>
       </div>
     </section>
