@@ -26,7 +26,7 @@ export default function About () {
           <article>
             <h1 className='text-4xl text-indigo-600 mb-6 font-light'>short & sweet</h1>
           <p className='text-2xl font-light'>hi! my name is kelli landry. thanks for droppin&apos; in! first off, i swear i know how to use capital letters; settle into the chill of lowercase 🏄🏻‍♀️</p>
-          <p className='text-2xl font-light mt-6'>i'm a former social worker turned front-end web developer. in 2018, i started my tech journey at a louisiana-based startup. from there, i've been living life at rocket speed! my ultimate career goal is to be a badass full-stack developer. when i'm not learning something on udemy, perusing stackoverflow, or trying out some new software, i enjoy reading in my hammock, camping, dancing, playing pool, karaoke, live music, learning spanish & french on duolingo, and visiting with friends.</p>
+          <p className='text-2xl font-light mt-6'>i&apos;m a former social worker turned front-end web developer. in 2018, i started my tech journey at a louisiana-based startup. from there, i&apos;ve been living life at rocket speed! my ultimate career goal is to be a badass full-stack developer. when i&apos;m not learning something on udemy, perusing stackoverflow, or trying out some new software, i enjoy reading in my hammock, camping, dancing, playing pool, karaoke, live music, learning spanish & french on duolingo, and visiting with friends.</p>
           </article>
         </section>}
       {hidden &&
