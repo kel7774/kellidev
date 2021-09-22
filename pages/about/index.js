@@ -18,11 +18,11 @@ export default function About () {
         canonical='http://kellilandry.dev/about'
       />
       <nav className='flex flex-row justify-center'>
-        <button className='mt-8 mr-8 shadow-sm border-2 rounded-2xl p-3 w-36 border-indigo-500 bg-indigo-500 text-white font-light uppercase tracking-widest hover:bg-indigo-300 hover:text-gray-900' onClick={showShort}>short</button>
-        <button className='mt-8 mr-8 shadow-sm border-2 rounded-2xl p-3 w-36 border-indigo-500 bg-indigo-500 text-white font-light uppercase tracking-widest hover:bg-indigo-300 hover:text-gray-900' onClick={showLong}>long</button>
+        <button className='xs:mr-1 mt-8 mr-8 border-2 rounded-2xl p-3 w-36 border-indigo-500 bg-indigo-500 text-white font-light uppercase tracking-widest hover:bg-indigo-300 hover:text-gray-900' onClick={showShort}>short</button>
+        <button className='mt-8 mr-8 xs:mr-0 border-2 rounded-2xl p-3 w-36 border-indigo-500 bg-indigo-500 text-white font-light uppercase tracking-widest hover:bg-indigo-300 hover:text-gray-900' onClick={showLong}>long</button>
       </nav>
       {!hidden &&
-        <section className='text-left px-28 py-20'>
+        <section className='text-left xs:px-14 xs:py-14 px-28 py-20'>
           <article>
             <h1 className='text-4xl text-indigo-600 mb-6 font-light'>short & sweet</h1>
           <p className='text-2xl font-light'>hi! my name is kelli landry. thanks for droppin&apos; in! first off, i swear i know how to use capital letters; settle into the chill of lowercase 🏄🏻‍♀️</p>
@@ -30,7 +30,7 @@ export default function About () {
           </article>
         </section>}
       {hidden &&
-        <section className='text-left px-28 py-20 text-2xl'>
+        <section className='text-left px-28 py-20 xs:px-14 xs:py-14 text-2xl'>
           <article>
             <h1 className='text-4xl text-indigo-600 mb-6 font-light'>long-winded</h1>
             <h3 className='text-2xl text-indigo-600 my-3 font-light'>welcome in! where&apos;s your seatbelt?</h3>

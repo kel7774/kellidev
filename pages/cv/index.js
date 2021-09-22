@@ -10,9 +10,9 @@ export default function CV () {
         description='A list of all relevant jobs and experiences Kelli Landry has had in the past 5 years'
         canonical='http://kellilandry.dev/cv'
       />
-      <div className='flex flex-row px-28 py-20'>
+      <div className='flex flex-row xs:px-6 xs:py-10 px-24 py-20'>
         <section>
-          <h1 className='text-4xl text-indigo-600 font-light'>experience</h1>
+          <h1 className='text-4xl xs:text-lg xs:font-bold text-indigo-600 font-light'>experience</h1>
           {jobs.map(job => (
             <JobItem
               key={job.company}
@@ -24,7 +24,7 @@ export default function CV () {
           ))}
         </section>
         <section>
-          <h1 className='text-4xl text-indigo-600 font-light'>education</h1>
+          <h1 className='text-4xl xs:text-lg xs:font-bold text-indigo-600 font-light'>education</h1>
           <h2 className='text-2xl text-indigo-600 font-light mt-4'>university of louisiana - lafayette</h2>
           <h3 className='text-lg text-indigo-600 font-light mt-3'>august 2008 - december 2012</h3>
           <p className='font-light'>bachelor of science in child and family studies</p>
