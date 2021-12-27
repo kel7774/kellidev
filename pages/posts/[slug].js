@@ -102,7 +102,6 @@ const Post = ({ post }) => {
             ol: ({ children }) => <ol className='pl-0'>{children}</ol>,
             li: ({ children }) => <li className='p-3'>{children}</li>,
             p: ({ children }) => <p className='leading-7 my-7 font-light'>{children}</p>,
-            a: ({ children }) => <a className='text-indigo-800 font-light cursor-pointer hover:underline'>{children}</a>
           }}
         />
       </article>
