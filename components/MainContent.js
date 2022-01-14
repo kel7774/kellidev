@@ -2,12 +2,12 @@ import Image from 'next/image'
 
 export default function MainContent () {
   return (
-    <section>
+    <section className='dark:bg-indigo-500 bg-indigo-200 '>
       <header className='xs:h-80'>
         <div className='flex flex-col text-right px-3'>
-          <h1 className='xs:mt-14 sm:mt-0 md:mt-0 lg:mt-14 xl:mt-0 2xl:mt-0 font-sans font-light text-8xl lowercase'>Kelli Landry</h1>
-          <h2 className='font-sans text-4xl lowercase'>Web Developer</h2>
-          <h3 className='font-sans text-2xl lowercase'><span>📍</span>lafayette, la</h3>
+          <h1 className='xs:mt-14 sm:mt-0 md:mt-0 lg:mt-14 xl:mt-0 2xl:mt-0 font-sans font-light text-8xl lowercase dark:text-indigo-100'>Kelli Landry</h1>
+          <h2 className='font-sans text-4xl lowercase dark:text-indigo-100'>Web Developer</h2>
+          <h3 className='font-sans text-2xl lowercase dark:text-indigo-100'><span>📍</span>lafayette, la</h3>
         </div>
       </header>
       <div className='xs:p-7 sm:p-0 md:p-0 lg:p-0 xl:p-0 2xl:p-0'>
