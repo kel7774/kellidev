@@ -4,7 +4,7 @@ export const jobs = [
     company: 'turner industries',
     duration: 'september 2021 - present',
     duties: [
-      'new job, who dis!'
+      'building rad tools for the construction sector',
     ]
   },
   {

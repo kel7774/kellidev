@@ -77,15 +77,15 @@ export async function getStaticPaths () {
 
 const Post = ({ post }) => {
   return (
-    <section className='p-16'>
+    <section className='p-16 xl:px-96 2xl:px-96 lg:px-72'>
       <NextSeo
         title={`Kelli Landry - Blog: ${post.title}`}
         canonical={`http://kellilandry.dev/posts/${post.slug}`}
       />
       <section className='flex flex-row justify-between items-center h-12'>
-        <h1 className='text-lg font-light text-indigo-500'>{post.title}</h1>
-        <h4 className='text-sm text-indigo-600 font-light'>{formatDate(post.date)}</h4>
-        <div className='text-indigo-800 font-light cursor-pointer hover:underline'>
+        <h1 className='text-lg text-indigo-500 dark:text-indigo-300'>{post.title}</h1>
+        <h4 className='text-sm text-indigo-600 dark:text-indigo-50'>{formatDate(post.date)}</h4>
+        <div className='text-indigo-800 cursor-pointer'>
           <Link href='/posts'>back to posts</Link>
         </div>
       </section>
@@ -99,9 +99,9 @@ const Post = ({ post }) => {
                 <Image src={src} alt={altText} height={height} width={width} objectFit='cover' />
               </div>
             ),
-            ol: ({ children }) => <ol className='pl-0'>{children}</ol>,
-            li: ({ children }) => <li className='p-3'>{children}</li>,
-            p: ({ children }) => <p className='leading-7 my-7 font-light'>{children}</p>,
+            ol: ({ children }) => <ol className='pl-0 dark:text-indigo-50'>{children}</ol>,
+            li: ({ children }) => <li className='p-3 dark:text-indigo-50'>{children}</li>,
+            p: ({ children }) => <p className='leading-7 my-7 dark:text-indigo-50'>{children}</p>,
           }}
         />
       </article>

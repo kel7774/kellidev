@@ -5,7 +5,7 @@ export default function ContactForm () {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  const [submitted, setSubmitted] = useState(false)
+  const [, setSubmitted] = useState(false)
   const router = useRouter()
 
   const handleSubmit = e => {
@@ -36,7 +36,7 @@ export default function ContactForm () {
   return (
     <form className>
       <div className='flex flex-col pb-4'>
-        <label htmlFor='firstName' className='font-light'>name</label>
+        <label htmlFor='firstName' className='dark:text-indigo-200'>name</label>
         <input
           type='text'
           name='name'
@@ -49,7 +49,7 @@ export default function ContactForm () {
         {/* {errors.name && 'name is required'} */}
       </div>
       <div className='flex flex-col pb-4'>
-        <label htmlFor='email' className='font-light'>email</label>
+        <label htmlFor='email' className='dark:text-indigo-200'>email</label>
         <input
           type='email'
           name='email'
@@ -68,7 +68,7 @@ export default function ContactForm () {
         {/* {errors.email && 'email is required'} */}
       </div>
       <div className='flex flex-col pb-4'>
-        <label htmlFor='message' className='font-light'>message</label>
+        <label htmlFor='message' className='dark:text-indigo-200'>message</label>
         <textarea
           placeholder='message ...'
           name='message'
