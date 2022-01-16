@@ -32,7 +32,7 @@ export default function About () {
         <button className='xs:mr-1 mt-8 mr-8 border-2 rounded-2xl p-3 w-36 border-indigo-500 dark:hover:border-indigo-800 bg-indigo-500 dark:bg-indigo-800 text-white font-bold uppercase tracking-widest hover:bg-indigo-300 dark:hover:bg-indigo-500 hover:text-gray-900 dark:hover:text-indigo-100' onClick={showLong}>long</button>
       </nav>
       {!hidden &&
-        <section className='text-left xs:px-14 xs:py-14 px-28 py-20'>
+        <section className='text-left xs:px-14 xs:py-14 px-28 py-20 xl:px-96 2xl:px-96 lg:px-72'>
           <article>
             <h1 className='text-4xl text-indigo-600 dark:text-indigo-200 underline mb-6 '>short & sweet</h1>
           <p className='text-2xl dark:text-indigo-50'>hi! my name is kelli landry. thanks for droppin&apos; in! first off, i swear i know how to use capital letters; settle into the chill of lowercase 🏄🏻‍♀️</p>
@@ -40,7 +40,7 @@ export default function About () {
           </article>
         </section>}
       {hidden &&
-        <section className='text-left px-28 py-20 xs:px-14 xs:py-14 text-2xl'>
+        <section className='text-left px-28 py-20 xs:px-14 xs:py-14 text-2xl xl:px-96 2xl:px-96 lg:px-72'>
           <article>
             <h1 className='text-4xl text-indigo-600 dark:text-indigo-200 underline mb-6'>long-winded</h1>
             <h3 className='text-2xl text-indigo-600 my-3 dark:text-indigo-200 font-semibold'>welcome in! where&apos;s your seatbelt?</h3>
