@@ -10,7 +10,7 @@ export default function Contact () {
       />
       <div className='flex flex-row p-4'>
         <section className=''>
-          <h1 className='text-indigo-500 font-light text-2xl py-4'>send me a line</h1>
+          <h1 className='text-indigo-500 dark:text-indigo-200 text-2xl py-4'>send me a line</h1>
           <ContactForm />
         </section>
       </div>

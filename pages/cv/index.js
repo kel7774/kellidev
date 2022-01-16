@@ -12,7 +12,7 @@ export default function CV () {
       />
       <div className='flex flex-row xs:px-6 xs:py-10 px-24 py-20'>
         <section>
-          <h1 className='text-4xl xs:text-lg xs:font-bold text-indigo-600 font-light'>experience</h1>
+          <h1 className='text-4xl xs:text-lg xs:font-bold text-indigo-600 dark:text-indigo-200'>experience</h1>
           {jobs.map(job => (
             <JobItem
               key={job.company}
@@ -24,13 +24,13 @@ export default function CV () {
           ))}
         </section>
         <section>
-          <h1 className='text-4xl xs:text-lg xs:font-bold text-indigo-600 font-light'>education</h1>
-          <h2 className='text-2xl text-indigo-600 font-light mt-4'>university of louisiana - lafayette</h2>
-          <h3 className='text-lg text-indigo-600 font-light mt-3'>august 2008 - december 2012</h3>
-          <p className='font-light'>bachelor of science in child and family studies</p>
-          <h2 className='text-2xl text-indigo-600 font-light mt-4'>bloc.io</h2>
-          <h3 className='text-lg text-indigo-600 font-light mt-3'>june 2018 - february 2019</h3>
-          <p className='font-light'>completed web development track</p>
+          <h1 className='text-4xl xs:text-lg xs:font-bold text-indigo-600 dark:text-indigo-200'>education</h1>
+          <h2 className='text-2xl text-indigo-600 dark:text-indigo-200 mt-4'>university of louisiana - lafayette</h2>
+          <h3 className='text-lg text-indigo-600 dark:text-indigo-50 mt-3'>august 2008 - december 2012</h3>
+          <p className=' dark:text-indigo-50'>bachelor of science in child and family studies</p>
+          <h2 className='text-2xl text-indigo-600 dark:text-indigo-200 mt-4'>bloc.io</h2>
+          <h3 className='text-lg text-indigo-600 dark:text-indigo-50 mt-3'>june 2018 - february 2019</h3>
+          <p className=' dark:text-indigo-50'>completed web development track</p>
         </section>
       </div>
     </div>

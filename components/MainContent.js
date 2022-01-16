@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function MainContent () {
   return (
-    <section className='dark:bg-indigo-500 bg-indigo-200 '>
+    <section>
       <header className='xs:h-80'>
         <div className='flex flex-col text-right px-3'>
           <h1 className='xs:mt-14 sm:mt-0 md:mt-0 lg:mt-14 xl:mt-0 2xl:mt-0 font-sans font-light text-8xl lowercase dark:text-indigo-100'>Kelli Landry</h1>

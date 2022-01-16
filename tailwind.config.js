@@ -6,6 +6,12 @@ module.exports = {
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
+    extend: {
+      backgroundImage: {
+        'light-theme': 'linear-gradient(to bottom right, #e0e7ff, #c7d2fe, #818cf8)',
+        'dark-theme': 'linear-gradient(to top right, #3730a3 50%, #4338ca, #818cf8)',
+      },
+    },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
       'serif': ['nunito', 'serif']
@@ -27,10 +33,10 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
-    }
-  },
-  height: {
-    'customHeight': '54rem'
+    },
+    height: {
+      'customHeight': '54rem'
+    },
   },
   variants: {
     extend: {},

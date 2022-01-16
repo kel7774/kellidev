@@ -50,27 +50,27 @@ export default function MainNavigation () {
 
           <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
             <Link href='/'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-light items-center justify-center hover:bg-indigo-400 hover:text-white lowercase dark:text-indigo-100'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center hover:bg-indigo-400 hover:text-white lowercase dark:text-indigo-100'>
                 Home
               </a>
             </Link>
             <Link href='/about'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-light items-center justify-center hover:bg-indigo-400 hover:text-white lowercase dark:text-indigo-100'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center hover:bg-indigo-400 hover:text-white lowercase dark:text-indigo-100'>
                 About
               </a>
             </Link>
             <Link href='/cv'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-light items-center justify-center hover:bg-indigo-400 hover:text-white lowercase dark:text-indigo-100'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center hover:bg-indigo-400 hover:text-white lowercase dark:text-indigo-100'>
                 CV
               </a>
             </Link>
             <Link href='/posts'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-light items-center justify-center hover:bg-indigo-400 hover:text-white lowercase dark:text-indigo-100'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center hover:bg-indigo-400 hover:text-white lowercase dark:text-indigo-100'>
                 Blog
               </a>
             </Link>
             <Link href='/contact'>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-light items-center justify-center hover:bg-indigo-400 hover:text-white lowercase dark:text-indigo-100'>
+              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center hover:bg-indigo-400 hover:text-white lowercase dark:text-indigo-100'>
                 Contact
               </a>
             </Link>

@@ -42,9 +42,9 @@ const Posts = ({ posts }) => {
       {posts.map((post) => {
         return (
           <article className='pb-7' key={post.id}>
-            <section className='flex flex-col w-60 h-full border border-indigo-600 bg-indigo-200 rounded-xl hover:bg-indigo-600 hover:text-indigo-200 text-center p-5'>
-              <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]' className='text-indigo-600 font-light'>
-                <div className='font-light text-sm'>
+            <section className='flex flex-col w-60 border border-indigo-600 dark:border-indigo-300 bg-indigo-200 rounded-xl hover:bg-indigo-600 hover:text-indigo-200 text-center p-5'>
+              <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]' className='text-indigo-600'>
+                <div className='text-sm'>
                   <Image src={post.coverImage.url} height='200' width='200' alt='Cover Photo for blog post' className='rounded-xl cursor-pointer' />
                   {post.title}
                 </div>

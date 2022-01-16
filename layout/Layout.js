@@ -6,7 +6,7 @@ export default function Layout(props) {
   return (
     <div className='font-sans'>
       <MainNavigation />
-      <main className='min-h-screen'>
+      <main className='min-h-screen bg-indigo-200 dark:bg-indigo-600'>
         {props.children}
       </main>
       <Footer />
