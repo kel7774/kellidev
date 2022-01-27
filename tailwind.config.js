@@ -11,10 +11,13 @@ module.exports = {
         'light-theme': 'linear-gradient(to bottom right, #e0e7ff, #c7d2fe, #818cf8)',
         'dark-theme': 'linear-gradient(to top right, #3730a3 50%, #4338ca, #818cf8)',
       },
+      boxShadow: {
+        'circle': 'inset 0 0 10px -10px rgba(55, 48, 168, 0.6)'
+      },
     },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
-      'serif': ['nunito', 'serif']
+      'serif': ['nunito', 'serif'],
     },
     screens: {
       'xs': '375px',

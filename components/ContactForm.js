@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import React from 'react'
 import { useRouter } from 'next/router'
 
 export default function ContactForm () {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-  const [, setSubmitted] = useState(false)
+  const [name, setName] = React.useState('')
+  const [email, setEmail] = React.useState('')
+  const [message, setMessage] = React.useState('')
+  const [, setSubmitted] = React.useState(false)
   const router = useRouter()
 
   const handleSubmit = e => {
@@ -82,7 +82,7 @@ export default function ContactForm () {
         />
         {/* {errors.textarea && 'a message of at least 100 characters is required'} */}
       </div>
-      <input type='submit' className='uppercase tracking-wide rounded-lg p-2 bg-indigo-500 text-white hover:bg-indigo-200 hover:text-indigo-500 cursor-pointer' onClick={(e) => handleSubmit(e)} />
+      <input type='submit' className='uppercase tracking-wide rounded-lg p-2 bg-indigo-500 text-white hover:bg-indigo-200 hover:text-indigo-500 cursor-pointer duration-200 ease-in shadow-lg shadow-indigo-500/50' onClick={(e) => handleSubmit(e)} />
     </form>
   )
 }

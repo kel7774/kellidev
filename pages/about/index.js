@@ -1,5 +1,9 @@
 import React from 'react'
+import Image from 'next/image'
 import { NextSeo } from 'next-seo'
+
+import Kelli_Profile from '../../public/kelli_smile.png'
+import Kelli_Sailor from '../../public/sailor_kelli.png'
 
 export default function About () {
   const [hidden, setHidden] = React.useState(false)
@@ -20,23 +24,29 @@ export default function About () {
         canonical='http://kellilandry.dev/about'
       />
       <nav className='flex flex-row justify-center'>
-        <button className='xs:mr-1 mt-8 mr-8 border-2 rounded-2xl p-3 w-36 border-indigo-500 dark:border-indigo-800 dark:hover:border-indigo-800 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 dark:hover:bg-indigo-500 hover:text-gray-900 dark:hover:text-indigo-100' onClick={showShort}>short</button>
-        <button className='xs:mr-1 mt-8 mr-8 border-2 rounded-2xl p-3 w-36 border-indigo-500 dark:border-indigo-800  dark:hover:border-indigo-800 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 dark:hover:bg-indigo-500 hover:text-gray-900 dark:hover:text-indigo-100' onClick={showLong}>long</button>
+        <button className='xs:mr-1 mt-8 mr-8 border-2 rounded-2xl p-3 w-36 border-indigo-500 dark:border-indigo-800 dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 hover:border-indigo-300 dark:hover:bg-indigo-400 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in shadow-lg shadow-indigo-500/50' onClick={showShort}>short</button>
+        <button className='xs:mr-1 mt-8 mr-8 border-2 rounded-2xl p-3 w-36 border-indigo-500 dark:border-indigo-800  dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 dark:hover:bg-indigo-400 hover:border-indigo-300 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in shadow-lg shadow-indigo-500/50' onClick={showLong}>long</button>
       </nav>
       {!hidden &&
         <section className='text-left xs:px-14 xs:py-14 px-28 py-20 xl:px-96 2xl:px-96 lg:px-72'>
           <article>
-            <h1 className='text-2xl text-indigo-600 dark:text-indigo-200 underline mb-6 '>short & sweet</h1>
-          <p className='text-lg dark:text-indigo-50'>hi! my name is kelli landry. thanks for droppin&apos; in! first off, i swear i know how to use capital letters; settle into the chill of lowercase 🏄🏻‍♀️</p>
+            <h1 className='text-2xl text-center text-indigo-600 dark:text-indigo-200 underline mb-6 '>short & sweet</h1>
+            <div className='w-full flex justify-center mb-6'>
+              <Image src={Kelli_Profile} alt='Kelli Landry Profile' height='400' width='400' objectFit='cover' className='rounded-full shadow-circle' />
+            </div>
+          <p className='text-lg dark:text-indigo-50'>hey y&apos;all! my name&apos;s kelli landry. 👆 that&apos;s me!  thanks for droppin&apos; in! first off, i swear i know how to use capital letters; settle into the chill of lowercase 🏄🏻‍♀️</p>
           <p className='text-lg dark:text-indigo-50 mt-6'>i&apos;m a former social worker turned front-end web developer. in 2018, i started my tech journey at a louisiana-based startup. from there, i&apos;ve been living life at rocket speed! my ultimate career goal is to be a badass full-stack developer. when i&apos;m not learning something on udemy, perusing stackoverflow, or trying out some new software, i enjoy reading in my hammock, camping, dancing, playing pool, karaoke, live music, learning spanish & french on duolingo, and visiting with friends.</p>
           </article>
         </section>}
       {hidden &&
         <section className='text-left px-28 py-20 xs:px-14 xs:py-14 text-2xl xl:px-96 2xl:px-96 lg:px-72'>
           <article>
-            <h1 className='text-2xl text-indigo-600 dark:text-indigo-200 underline mb-6'>long-winded</h1>
-            <h3 className='text-xl text-indigo-600 my-3 dark:text-indigo-200 font-semibold'>welcome in! where&apos;s your seatbelt?</h3>
-          <p className='dark:text-indigo-50 text-lg'>hello! my name is kelli landry! thanks for coming along for the ride. first off, i swear i know how to capitalize. but i like the chill factor associated with lowercase 😎 anyway, you&apos;re here for the long version, so come on in; it&apos;s kinda bumpy.</p>
+            <h1 className='text-2xl text-center text-indigo-600 dark:text-indigo-200 underline mb-6'>long-winded</h1>
+            <div className='w-full flex justify-center mb-6'>
+              <Image src={Kelli_Sailor} alt='Kelli Landry Profile' height='400' width='400' objectFit='cover' className='rounded-full shadow-circle' />
+            </div>
+          <h3 className='text-xl text-indigo-600 my-3 dark:text-indigo-200 font-semibold'>welcome!</h3>
+          <p className='dark:text-indigo-50 text-lg'>hey there! my name is kelli landry! 👆 that&apos;s me! thanks for coming along for the ride. first off, i swear i know how to capitalize. but i like the chill factor associated with lowercase 😎 anyway, you&apos;re here for the long version, so come on in; it&apos;s kinda bumpy.</p>
           </article>
           <article>
             <h3 className='text-xl text-indigo-600 dark:text-indigo-200 font-semibold my-3'>feel the burn(out)</h3>

@@ -7,3 +7,31 @@
     @apply text-indigo-500 dark:text-indigo-50 dark:bg-indigo-800;
   }
 }
+
+.navBar {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.navBar::after, .navBar::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 0px;
+  height: 4px;
+  margin: 6px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.75s;
+  opacity: 0;
+  background-color: #c7d2fe;
+  left: 0;
+}
+
+.navBar:hover {
+  cursor: pointer;
+}
+
+.navBar:hover::before{
+  width: 100%;
+  opacity: 1;
+}
