@@ -1,6 +1,6 @@
 import moment from 'moment'
 
 export default function formatDate (date) {
-  const formattedDate = moment(date).format('dddd, MMMM Do, YYYY').toLowerCase()
+  const formattedDate = moment(date).format('ll').toLowerCase()
   return formattedDate
 }

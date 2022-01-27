@@ -82,9 +82,9 @@ const Post = ({ post }) => {
         title={`Kelli Landry - Blog: ${post.title}`}
         canonical={`http://kellilandry.dev/posts/${post.slug}`}
       />
+      <h1 className='text-lg my-5 text-indigo-500 dark:text-indigo-300'>{post.title}</h1>
       <section className='flex flex-row justify-between items-center h-12'>
-        <h1 className='text-lg text-indigo-500 dark:text-indigo-300'>{post.title}</h1>
-        <h4 className='text-sm text-indigo-600 dark:text-indigo-50'>{formatDate(post.date)}</h4>
+        <h4 className='text-sm font-bold text-indigo-600 dark:text-indigo-50'>{formatDate(post.date)}</h4>
         <div className='text-indigo-800 cursor-pointer'>
           <Link href='/posts'>back to posts</Link>
         </div>
@@ -105,7 +105,7 @@ const Post = ({ post }) => {
           }}
         />
       </article>
-      <div className='text-indigo-800 font-light cursor-pointer hover:underline'>
+      <div className='text-indigo-800 cursor-pointer'>
         <Link href='/posts'>back to posts</Link>
       </div>
     </section>
