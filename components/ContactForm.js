@@ -82,7 +82,7 @@ export default function ContactForm () {
         />
         {/* {errors.textarea && 'a message of at least 100 characters is required'} */}
       </div>
-      <input type='submit' className='uppercase tracking-wide rounded-lg p-2 bg-indigo-500 text-white hover:bg-indigo-200 hover:text-indigo-500 cursor-pointer duration-200 ease-in shadow-lg shadow-indigo-500/50' onClick={(e) => handleSubmit(e)} />
+      <input type='submit' className='uppercase tracking-wide p-2 bg-indigo-500 text-white hover:bg-indigo-200 hover:text-indigo-500 cursor-pointer duration-200 ease-in aboutButtonBoxShadow' onClick={(e) => handleSubmit(e)} />
     </form>
   )
 }

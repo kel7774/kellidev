@@ -33,30 +33,28 @@ export async function getStaticProps () {
 
 const Posts = ({ posts }) => {
   return (
-    <div className='flex flex-row justify-evenly flex-wrap py-4 px-4'>
+    <div className='block'>
       <NextSeo
         title='Kelli Landry - Blog'
         description='A blog written by Kelli Landry about self-taught frontend web development'
         canonical='http://kellilandry.dev/posts'
       />
-      {posts.map((post) => {
-        return (
-          <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]' passHref className='text-indigo-600'>
-            <article className='pb-7' key={post.id}>
-              <section className='flex flex-col w-60 min-h-full border border-indigo-600 dark:border-indigo-300 bg-indigo-200 rounded-xl hover:bg-indigo-600 hover:text-indigo-200 text-center p-5 cursor-pointer'>
-                  <div className='text-sm'>
-                    <Image src={post.coverImage.url} height='200' width='200' alt='Cover Photo for blog post' className='rounded-xl cursor-pointer' />
-                    {post.title}
-                  </div>
-                <div>
-                  <div className='text-xs font-bold'>{formatDate(post.date)}</div>
-                  <div className='text-xs'>{post.excerpt}</div>
-                </div>
-              </section>
-            </article>
+      <div className='flex flex-col'>
+        {posts.map((post) => (
+          <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]' passHref>
+            <section className='flex flex-row pb-7 pt-4 w-2/4 m-blog dark:text-indigo-50'>
+              <div className='pr-4'>
+                <Image src={post.coverImage.url} height='200' width='200' alt='Cover Photo for blog post' className='rounded-xl cursor-pointer' layout='fixed' />
+              </div>
+              <div className='pr-5'>{formatDate(post.date)}</div>
+              <div className='cursor-pointer'>
+                <header className='underlineTitle text-lg'>{post.title}</header>
+                <div className='text-sm'>{post.excerpt}</div>
+              </div>
+            </section>
           </Link>
-        )
-      })}
+        ))}
+      </div>
     </div>
   )
 }

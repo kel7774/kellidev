@@ -1,13 +1,12 @@
-import './MainNavigation'
 import MainNavigation from './MainNavigation'
-import Footer from '../components/Footer'
+import Footer from './Footer'
 
-export default function Layout(props) {
+export default function Layout({children}) {
   return (
     <div className='font-sans'>
       <MainNavigation />
       <main className='min-h-screen bg-indigo-200 dark:bg-indigo-600'>
-        {props.children}
+        {children}
       </main>
       <Footer />
     </div>
