@@ -14,6 +14,12 @@ module.exports = {
       boxShadow: {
         'circle': 'inset 0 0 10px -10px rgba(55, 48, 168, 0.6)'
       },
+      height: {
+        'customHeight': '54rem'
+      },
+      margin: {
+        'blog': '0 auto'
+      },
     },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
@@ -36,9 +42,6 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
-    },
-    height: {
-      'customHeight': '54rem'
     },
   },
   variants: {

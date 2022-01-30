@@ -24,13 +24,12 @@ export default function About () {
         canonical='http://kellilandry.dev/about'
       />
       <nav className='flex flex-row justify-center'>
-        <button className='xs:mr-1 mt-8 mr-8 border-2 rounded-2xl p-3 w-36 border-indigo-500 dark:border-indigo-800 dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 hover:border-indigo-300 dark:hover:bg-indigo-400 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in shadow-lg shadow-indigo-500/50' onClick={showShort}>short</button>
-        <button className='xs:mr-1 mt-8 mr-8 border-2 rounded-2xl p-3 w-36 border-indigo-500 dark:border-indigo-800  dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 dark:hover:bg-indigo-400 hover:border-indigo-300 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in shadow-lg shadow-indigo-500/50' onClick={showLong}>long</button>
+        <button className='xs:mr-1 mt-8 mr-4 p-3 w-36 border-indigo-500 dark:border-indigo-800 dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 hover:border-indigo-300 dark:hover:bg-indigo-400 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in aboutButtonBoxShadow uppercase' onClick={showShort}>short</button>
+        <button className='xs:mr-1 mt-8 ml-4 p-3 w-36 border-indigo-500 dark:border-indigo-800  dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 dark:hover:bg-indigo-400 hover:border-indigo-300 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in aboutButtonBoxShadow uppercase' onClick={showLong}>long</button>
       </nav>
       {!hidden &&
         <section className='text-left xs:px-14 xs:py-14 px-28 py-20 xl:px-96 2xl:px-96 lg:px-72'>
           <article>
-            <h1 className='text-2xl text-center text-indigo-600 dark:text-indigo-200 underline mb-6 '>short & sweet</h1>
             <div className='w-full flex justify-center mb-6'>
               <Image src={Kelli_Profile} alt='Kelli Landry Profile' height='400' width='400' objectFit='cover' className='rounded-full shadow-circle' />
             </div>
@@ -41,7 +40,6 @@ export default function About () {
       {hidden &&
         <section className='text-left px-28 py-20 xs:px-14 xs:py-14 text-2xl xl:px-96 2xl:px-96 lg:px-72'>
           <article>
-            <h1 className='text-2xl text-center text-indigo-600 dark:text-indigo-200 underline mb-6'>long-winded</h1>
             <div className='w-full flex justify-center mb-6'>
               <Image src={Kelli_Sailor} alt='Kelli Landry Profile' height='400' width='400' objectFit='cover' className='rounded-full shadow-circle' />
             </div>
