@@ -3,7 +3,7 @@ export default function Footer () {
   const year = new Date().getFullYear()
 
   return (
-    <footer className='bg-indigo-50 dark:bg-indigo-800 dark:text-indigo-300 h-16 w-full flex flex-row justify-evenly pt-3 pb-3'>
+    <footer className='bg-indigo-50 dark:bg-indigo-800 dark:text-indigo-300 h-16 w-full flex flex-row justify-between pt-3 pb-3 pr-4 pl-4'>
       <section className='sm:flex flex-row text-indigo-600 dark:text-indigo-50'><div>&copy; {year}</div></section>
       <section className='flex flex-row'>
         <div>
