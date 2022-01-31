@@ -77,6 +77,7 @@ export async function getStaticPaths () {
 
 const Post = ({ post }) => {
   const router = useRouter()
+  
   return (
     <section className='p-16 xl:px-96 2xl:px-96 lg:px-72'>
       <NextSeo
