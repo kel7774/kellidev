@@ -2,6 +2,8 @@ import { GraphQLClient } from 'graphql-request'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import Image from 'next/image'
+import readingTime from 'reading-time'
+
 import formatDate from '../helpers/formatDate'
 
 const graphcms = new GraphQLClient(process.env.customKey)
@@ -15,6 +17,9 @@ export async function getStaticProps () {
         date
         title
         excerpt
+        content {
+          text
+        }
         slug
         coverImage {
           id
@@ -48,7 +53,10 @@ const Posts = ({ posts }) => {
               </div>
               <div className='pr-5'>{formatDate(post.date)}</div>
               <div className='cursor-pointer'>
-                <header className='underlineTitle text-lg hover:text-indigo-50'>{post.title}</header>
+                <header className='underlineTitle text-lg hover:text-indigo-50 flex flex-row justify-between'>
+                  <span>{post.title}</span>
+                  <span>{readingTime(post.content.text).text}</span>
+                </header>
                 <div className='text-sm'>{post.excerpt}</div>
               </div>
             </section>
