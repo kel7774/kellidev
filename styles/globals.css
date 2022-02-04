@@ -4,7 +4,10 @@
 
 @layer base {
   a {
-    @apply text-indigo-500 dark:text-indigo-50 dark:bg-indigo-800;
+    @apply text-indigo-500 dark:text-indigo-300;
+  }
+  a:hover {
+    @apply font-bold;
   }
 }
 
