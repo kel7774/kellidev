@@ -22,7 +22,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      'sans': ['Helvetica', 'Arial', 'sans-serif'],
+      'sans': ['Inter', 'Arial', 'sans-serif'],
       'serif': ['nunito', 'serif'],
     },
     screens: {

@@ -14,7 +14,7 @@ export default function MainNavigation () {
 
   return (
     <>
-      <nav className='flex items-center flex-wrap bg-indigo-50 dark:bg-indigo-800 shadow-inner p-3'>
+      <nav className='flex items-center flex-wrap bg-indigo-50 dark:bg-indigo-800 shadow-inner p-3 sticky top-0 z-50'>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 navBar'>
             <span className='font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Kelli</span><span className='font-nav text-indigo-600 dark:text-indigo-300  uppercase'>Landry</span>
