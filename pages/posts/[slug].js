@@ -4,6 +4,8 @@ import { NextSeo } from 'next-seo'
 import { RichText } from '@graphcms/rich-text-react-renderer'
 import { useRouter } from "next/router";
 import Image from 'next/image'
+import readingTime from 'reading-time'
+
 import formatDate from '../helpers/formatDate'
 
 const graphcms = new GraphQLClient(process.env.customKey)
@@ -55,11 +57,9 @@ export async function getStaticPaths () {
         }
         slug
         coverImage {
-          id
           url
         }
         author {
-          id
           name
         }
         date
@@ -77,9 +77,12 @@ export async function getStaticPaths () {
 
 const Post = ({ post }) => {
   const router = useRouter()
-  
+
+  const postToText = post.content.text
+  const readTime = readingTime(postToText)
+
   return (
-    <section className='p-16 xl:px-96 2xl:px-96 lg:px-72'>
+    <article className='p-16 xl:px-96 2xl:px-96 lg:px-72'>
       <NextSeo
         title={`Kelli Landry - Blog: ${post.title}`}
         canonical={`http://kellilandry.dev/posts/${post.slug}`}
@@ -87,9 +90,10 @@ const Post = ({ post }) => {
       <h1 className='text-lg my-5 text-indigo-500 dark:text-indigo-300'>{post.title}</h1>
       <section className='flex flex-row justify-between items-center h-12'>
         <h4 className='text-sm font-bold text-indigo-600 dark:text-indigo-50'>{formatDate(post.date)}</h4>
+        <h4 className='text-sm text-indigo-600 dark:text-indigo-50'>{readTime.text}</h4>
         <button className='border-indigo-500 dark:border-indigo-800  dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 dark:hover:bg-indigo-400 hover:border-indigo-300 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in aboutButtonBoxShadow uppercase' onClick={() => router.push('/posts')}>back to posts</button>
       </section>
-      <article className='pb-4 text-left'>
+      <section className='pb-4 text-left'>
         <RichText
           content={post.content.raw.children}
           renderers={{
@@ -104,9 +108,9 @@ const Post = ({ post }) => {
             p: ({ children }) => <p className='leading-7 my-7 dark:text-indigo-50'>{children}</p>,
           }}
         />
-      </article>
+      </section>
       <button className='border-indigo-500 dark:border-indigo-800  dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 dark:hover:bg-indigo-400 hover:border-indigo-300 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in aboutButtonBoxShadow uppercase' onClick={() => router.push('/posts')}>back to posts</button>
-    </section>
+    </article>
   )
 }
 
