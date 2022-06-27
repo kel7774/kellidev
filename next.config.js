@@ -5,6 +5,6 @@ module.exports = {
     customKey: 'https://api-us-east-1.graphcms.com/v2/ckqegbt2ezupe01xtcbr80b9g/master'
   },
   images: {
-    domains: ['media.graphcms.com']
+    domains: ['media.graphassets.com']
   }
 }
