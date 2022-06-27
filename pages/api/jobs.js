@@ -1,10 +1,12 @@
 export const jobs = [
   {
-    position: 'software developer',
+    position: 'junior software developer',
     company: 'turner industries',
-    duration: 'september 2021 - present',
+    duration: 'september 2021 - june 2022',
     duties: [
-      'building rad tools for the construction sector',
+      'building two enterprise projects using react framework',
+      'completed refactor of side project to manage several APIs',
+      'tech stack exposure to microsoft azure devops, c#, octopus'
     ]
   },
   {
