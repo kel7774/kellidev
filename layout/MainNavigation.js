@@ -45,11 +45,11 @@ export default function MainNavigation () {
                 CV
               </a>
             </Link>
-            <Link href='/posts'>
+            {/* <Link href='/posts'>
               <a className='navBar uppercase lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center dark:text-indigo-100'>
                 Blog
               </a>
-            </Link>
+            </Link> */}
             <Link href='/contact'>
               <a className='navBar uppercase lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black items-center justify-center dark:text-indigo-100'>
                 Contact
