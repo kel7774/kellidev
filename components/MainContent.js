@@ -6,7 +6,7 @@ export default function MainContent () {
       <header>
         <div className='flex flex-col text-right px-3'>
           <h1 className='font-light text-8xl lowercase dark:text-indigo-100 animate__animated animate__fadeInLeft'>Kelli Landry</h1>
-          <h2 className='text-4xl lowercase dark:text-indigo-100 animate__animated animate__fadeInRight'>software developer, scrum master</h2>
+          <h2 className='text-4xl lowercase dark:text-indigo-100 animate__animated animate__fadeInLeft'>software developer, scrum master</h2>
           <h3 className='text-2xl lowercase dark:text-indigo-100 animate__animated animate__fadeInUp'><span>📍</span>lafayette, la</h3>
         </div>
       </header>
