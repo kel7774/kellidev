@@ -5,9 +5,9 @@ export default function MainContent () {
     <section>
       <header>
         <div className='flex flex-col text-right px-3'>
-          <h1 className='font-light text-8xl lowercase dark:text-indigo-100'>Kelli Landry</h1>
-          <h2 className='text-4xl lowercase dark:text-indigo-100'>software developer, scrum master</h2>
-          <h3 className='text-2xl lowercase dark:text-indigo-100'><span>📍</span>lafayette, la</h3>
+          <h1 className='font-light text-8xl lowercase dark:text-indigo-100 animate__animated animate__fadeInLeft'>Kelli Landry</h1>
+          <h2 className='text-4xl lowercase dark:text-indigo-100 animate__animated animate__fadeInRight'>software developer, scrum master</h2>
+          <h3 className='text-2xl lowercase dark:text-indigo-100 animate__animated animate__fadeInUp'><span>📍</span>lafayette, la</h3>
         </div>
       </header>
       <div className='w-full flex justify-center p-7 profilePicBox'>
@@ -20,6 +20,9 @@ export default function MainContent () {
           className='rounded-lg'
         />
       </div>
+      <p className='text-lg text-center pb-5 lowercase dark:text-indigo-100'>
+        social worker 👩🏻‍💼 turned software developer 👩🏻‍💻 who wants to learn it all ✨
+      </p>
     </section>
   )
 }
