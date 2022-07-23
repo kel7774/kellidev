@@ -18,7 +18,14 @@ module.exports = {
         'customHeight': '54rem'
       },
       margin: {
-        'blog': '0 auto'
+        'blog': '0 auto',
+        'cv2XL': '0 30rem',
+        'cvXL': '0 14rem',
+        'cvLg': '1rem 10rem',
+        'cvMd': '0.5rem 4rem',
+      },
+      padding: {
+        'cv': '0 1.5rem'
       },
     },
     fontFamily: {
