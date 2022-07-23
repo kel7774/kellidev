@@ -6,9 +6,6 @@
   a {
     @apply text-indigo-500 dark:text-indigo-300;
   }
-  a:hover {
-    @apply font-bold;
-  }
 }
 
 .navBar {
@@ -54,3 +51,4 @@
 .aboutButtonBoxShadow {
   box-shadow: -5px 14px 0 1px #e0e7ff;
 }
+
