@@ -16,6 +16,10 @@ export default function About () {
     setHidden(false)
   }
 
+  const showShortest = () => {
+    setHidden(false);
+  }
+
   return (
     <div className='flex flex-col justify-center'>
       <NextSeo
@@ -33,9 +37,8 @@ export default function About () {
             <div className='w-full flex justify-center mb-6'>
               <Image src={Kelli_Profile} alt='Kelli Landry Profile' height='400' width='400' objectFit='cover' className='rounded-full shadow-circle' />
             </div>
-          <p className='text-lg dark:text-indigo-50'>hey y&apos;all! my name&apos;s kelli landry. 👆 that&apos;s me!  thanks for droppin&apos; in! hope you like lowercase and emojis 😇</p>
-          <p className='text-lg dark:text-indigo-50 mt-6'>first impressions are everything, right? so, i&apos;m a <a href='https://www.wizardingworld.com/collections/hufflepuff' target='_blank' rel='nooopener noreferrer'>hufflepuff</a>, an <a href='https://www.16personalities.com/enfj-personality' target='_blank' rel='nooopener noreferrer'>enfj-a</a>, jim from the office according to buzzfeed & was once described by a former boss as the 🦄 unicorn extrovert among our team of developers and managers.</p>
-          <p className='text-lg dark:text-indigo-50 mt-6'>what&apos;s a place like me doing in a girl like this? (the mummy... anyone?) well, i used to be a social worker. in 2016, burn out got the best of me. helping people is tough 🤕. i started working for a tech startup, & kept growing. fast forward to now, and i&apos;m still learning. i&apos;ve had <em>many</em> set backs since finishing boot camp in 2019. i&apos;ve survived two furloughs, hustling in a warehouse for 6+ months to get by, losing valuable time to devote to coding, & trying to find the right fit for a junior developer. but, in the meantime i made this website as well as a functional tool for a friend. it hasn&apos;t all been completely wasted, but i have <em>a ton</em> to learn. i still have hope that i can one day be a badass full stack engineer. my approach now is one of not only tenacity, but humility.</p>
+          <p className='text-lg dark:text-indigo-50'>hey y&apos;all! my name&apos;s kelli landry. 👆 that&apos;s me! thanks for droppin&apos; in! hope you like lowercase and emojis 😇</p>
+          <p className='text-lg dark:text-indigo-50 mt-6'>first impressions are everything, right? so, i&apos;m a <a href='https://www.wizardingworld.com/collections/hufflepuff' target='_blank' rel='nooopener noreferrer'>hufflepuff</a>, an <a href='https://www.16personalities.com/enfj-personality' target='_blank' rel='nooopener noreferrer'>enfj-a</a>, jim from the office according to buzzfeed & was once described by a former boss as the 🦄 unicorn extrovert among our team of developers and managers. i&apos;ve worked for two successful startups, survived a pandemic and two furloughs, completed a boot camp in 8 months while working a full time job, and have recently learned how to swim laps. my goal is to work in tech, building tools to make life easier. i&apos;m a tenacious learner, and have a long, yet exciting journey ahead of me. thanks for stopping by, and connect with me on linkedin if you want to say hi!</p>
           </article>
         </section>}
       {hidden &&
