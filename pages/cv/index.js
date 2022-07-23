@@ -10,8 +10,8 @@ export default function CV () {
         description='A list of all relevant jobs and experiences Kelli Landry has had in the past 5 years'
         canonical='http://kellilandry.dev/cv'
       />
-      <div className='flex flex-row xs:px-6 xs:py-10 px-24 py-20'>
-        <section>
+      <div className='flex flex-row xs:m-4 sm:m-2 md:m-cvMd lg:m-cvLg lg:p-cv xl:m-cvXL xl:p-6 2xl:m-cv2XL 2xl:py-6'>
+        <section className='2xl:p-cv'>
           <h1 className='text-4xl xs:text-lg xs:font-bold text-indigo-600 dark:text-indigo-200'>experience</h1>
           {jobs.map(job => (
             <JobItem
