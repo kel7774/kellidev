@@ -38,8 +38,11 @@ export async function getStaticProps () {
 
 const Posts = ({ posts }) => {
   return (
-    <div className='text-center p-4'>
-      <header>COMING [BACK] SOON!</header>
+    <div className='flex justify-center'>
+      <div className='h-80 w-2/3 bg-indigo-300 dark:bg-indigo-700 dark:text-indigo-200 flex flex-col justify-center items-center'>
+        <header className='text-4xl font-bold dark:text-indigo-200'>✨ lowercase & emoji taste 💅</header>
+        <p className='text-xl dark:text-indigo-200'>a developer blog for misfits, self-taught searchers, & neuro-divergent folks trying to stay above water in tech</p>
+      </div>
     </div>
     // <div className='block'>
     //   <NextSeo
