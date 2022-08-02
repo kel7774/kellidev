@@ -57,7 +57,11 @@ const Posts = ({ posts }) => {
         <button className='xs:mr-1 mt-8 mr-4 p-3 w-36 border-indigo-500 dark:border-indigo-800 dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 hover:border-indigo-300 dark:hover:bg-indigo-400 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in aboutButtonBoxShadow uppercase' onClick={handleClick}>{hidden ? 'about l&et' : 'blog'}</button>
       </div>
       <div className='w-2/3'>
-        {hidden ? <p>some content</p> : <About />}
+        {hidden ? (
+          <div className='text-center'>
+            <header className='font-bold dark:text-indigo-200 text-4xl'>coming back soon!</header>
+          </div>
+        ) : <About />}
       </div>
     </div>
     // <div className='block'>
