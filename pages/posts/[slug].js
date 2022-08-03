@@ -10,6 +10,8 @@ import formatDate from '../helpers/formatDate'
 
 const graphcms = new GraphQLClient(process.env.customKey)
 
+// TODO: style for mobile
+
 export async function getStaticProps ({ params }) {
   const { post } = await graphcms.request(
     `
@@ -82,34 +84,36 @@ const Post = ({ post }) => {
   const readTime = readingTime(postToText)
 
   return (
-    <article className='p-16 xl:px-96 2xl:px-96 lg:px-72'>
+    <article className='flex flex-col justify-center items-center'>
       <NextSeo
         title={`Kelli Landry - Blog: ${post.title}`}
         canonical={`http://kellilandry.dev/posts/${post.slug}`}
       />
-      <h1 className='text-lg my-5 text-indigo-500 dark:text-indigo-300'>{post.title}</h1>
-      <section className='flex flex-row justify-between items-center h-12'>
-        <h4 className='text-sm font-bold text-indigo-600 dark:text-indigo-50'>{formatDate(post.date)}</h4>
-        <h4 className='text-sm text-indigo-600 dark:text-indigo-50'>{readTime.text}</h4>
+      <div className='h-80 w-2/3 mb-12 bg-indigo-300 dark:bg-indigo-700 dark:text-indigo-200 flex flex-col justify-center items-center'>
+        <header className='text-4xl font-bold dark:text-indigo-200'>{post.title}</header>
+        <div className='flex flex-row mb-4'>
+          <p className='mr-2 text-xl dark:text-indigo-200'>{formatDate(post.date)}</p>
+          <p className='ml-2 text-xl dark:text-indigo-200'>{readTime.text}</p>
+        </div>
         <button className='border-indigo-500 dark:border-indigo-800  dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 dark:hover:bg-indigo-400 hover:border-indigo-300 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in aboutButtonBoxShadow uppercase' onClick={() => router.push('/posts')}>back to posts</button>
-      </section>
-      <section className='pb-4 text-left'>
+      </div>
+      <section className='w-2/3'>
         <RichText
           content={post.content.raw.children}
           renderers={{
-            code: ({ children }) => <code className='inline-block text-xs p-0.5 bg-indigo-500 text-indigo-200'>{children}</code>,
+            code: ({ children }) => <code className='inline-block text-2xl p-0.5 bg-indigo-500 text-indigo-200'>{children}</code>,
             img: ({ src, altText, height, width }) => (
               <div className='w-full flex justify-center'>
                 <Image src={src} alt={altText} height={height} width={width} objectFit='cover' />
               </div>
             ),
-            ol: ({ children }) => <ol className='pl-0 dark:text-indigo-50'>{children}</ol>,
-            li: ({ children }) => <li className='p-3 dark:text-indigo-50'>{children}</li>,
-            p: ({ children }) => <p className='leading-7 my-7 dark:text-indigo-50'>{children}</p>,
+            ol: ({ children }) => <ol className='pl-0 text-2xl dark:text-indigo-50'>{children}</ol>,
+            li: ({ children }) => <li className='p-3 text-2xl dark:text-indigo-50'>{children}</li>,
+            p: ({ children }) => <p className='leading-9 my-7 text-2xl dark:text-indigo-50'>{children}</p>,
           }}
         />
+        <button className='border-indigo-500 dark:border-indigo-800  dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 dark:hover:bg-indigo-400 hover:border-indigo-300 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in aboutButtonBoxShadow uppercase mb-7' onClick={() => router.push('/posts')}>back to posts</button>
       </section>
-      <button className='border-indigo-500 dark:border-indigo-800  dark:hover:border-indigo-400 bg-indigo-500 dark:bg-indigo-800 text-white tracking-widest hover:bg-indigo-300 dark:hover:bg-indigo-400 hover:border-indigo-300 hover:text-gray-900 dark:hover:text-gray-900 duration-200 ease-in aboutButtonBoxShadow uppercase' onClick={() => router.push('/posts')}>back to posts</button>
     </article>
   )
 }
