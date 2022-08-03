@@ -4,18 +4,11 @@ module.exports = {
     './components/**/*.js',
     './layout/**/*.js',
   ],
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: "class",
   theme: {
     extend: {
-      backgroundImage: {
-        'light-theme': 'linear-gradient(to bottom right, #e0e7ff, #c7d2fe, #818cf8)',
-        'dark-theme': 'linear-gradient(to top right, #3730a3 50%, #4338ca, #818cf8)',
-      },
       boxShadow: {
         'circle': 'inset 0 0 10px -10px rgba(55, 48, 168, 0.6)'
-      },
-      height: {
-        'customHeight': '54rem'
       },
       margin: {
         'blog': '0 auto',
@@ -29,7 +22,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      'sans': ['Inter', 'Arial', 'sans-serif'],
+      'sans': ['Helvetica', 'Arial', 'sans-serif'],
       'serif': ['nunito', 'serif'],
     },
     screens: {

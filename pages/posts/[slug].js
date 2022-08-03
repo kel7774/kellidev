@@ -10,8 +10,6 @@ import formatDate from '../helpers/formatDate'
 
 const graphcms = new GraphQLClient(process.env.customKey)
 
-// TODO: style for mobile
-
 export async function getStaticProps ({ params }) {
   const { post } = await graphcms.request(
     `
@@ -89,7 +87,7 @@ const Post = ({ post }) => {
         title={`Kelli Landry - Blog: ${post.title}`}
         canonical={`http://kellilandry.dev/posts/${post.slug}`}
       />
-      <div className='h-80 w-2/3 mb-12 bg-indigo-300 dark:bg-indigo-700 dark:text-indigo-200 flex flex-col justify-center items-center'>
+      <div className='h-80 w-2/3 xs:w-full mb-12 xs:px-4 xs:text-center bg-indigo-300 dark:bg-indigo-700 dark:text-indigo-200 flex flex-col justify-center items-center'>
         <header className='text-4xl font-bold dark:text-indigo-200'>{post.title}</header>
         <div className='flex flex-row mb-4'>
           <p className='mr-2 text-xl dark:text-indigo-200'>{formatDate(post.date)}</p>

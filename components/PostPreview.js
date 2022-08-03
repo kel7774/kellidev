@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import readingTime from 'reading-time'
+import Image from 'next/image'
 
 import formatDate from '../pages/helpers/formatDate';
 
@@ -7,15 +7,20 @@ function PostPreview({ posts }) {
   return (
     <div>
       {posts.map((post) => (
-        <section key={post.id} className='w-1/2'>
-          <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]' passHref>
-            <h2 className='cursor-pointer font-bold text-4xl'>{post.title}</h2>
-          </Link>
-          <div className='flex flex-row mb-4 text-lg'>
-            <p className='mr-2'>{formatDate(post.date)}</p>
-            <p className='ml-2'>{readingTime(post.content.text).text}</p>
+        <section key={post.id} className='w-1/2 flex flex-row justify-between xs:flex xs:flex-col xs:w-full'>
+          <div className='xs:flex xs:justify-center'>
+            <Image src={post.coverImage.url} alt={`Cover photo for ${post.title}`} layout='fixed' className='rounded-xl' height='200' width='200' />
           </div>
-          <p className='text-xl'>{post.excerpt}</p>
+          <div className="xs:mt-5 xs:text-center">
+            <p className='dark:text-indigo-50 mb-4'>📅 {formatDate(post.date)}</p>
+            <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]' passHref>
+              <a className='cursor-pointer font-bold text-4xl dark:text-indigo-50 dark:hover:text-indigo-300'>🖋 {post.title}</a>
+            </Link>
+            <p className='text-xl mb-4 dark:text-indigo-50'>{post.excerpt}</p>
+            <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]' passHref>
+              <a className='cursor-pointer font-bold text-xl dark:text-indigo-50 underline hover:no-underline xs:pb-5'>read more</a>
+            </Link>
+          </div>
         </section>
       ))}
     </div>

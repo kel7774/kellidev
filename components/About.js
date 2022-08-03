@@ -1,5 +1,3 @@
-// TODO: style for mobile
-
 function About() {
   return (
     <div className='text-center'>
