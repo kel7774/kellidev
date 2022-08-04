@@ -1,5 +1,13 @@
 export const jobs = [
   {
+    position: 'scrum master / consultant',
+    company: 'CGI Federal',
+    duration: 'august 2022 - present',
+    duties: [
+      '- the next chapter!'
+    ]
+  },
+  {
     position: 'software developer',
     company: 'turner industries',
     duration: 'september 2021 - june 2022',
