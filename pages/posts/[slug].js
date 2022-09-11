@@ -84,7 +84,7 @@ const Post = ({ post }) => {
   return (
     <article className='flex flex-col justify-center items-center'>
       <NextSeo
-        title={`Kelli Landry - Blog: ${post.title}`}
+        title={`Kelli Landry - Posts: ${post.title}`}
         canonical={`http://kellilandry.dev/posts/${post.slug}`}
       />
       <div className='h-80 w-2/3 xs:w-full mb-12 xs:px-4 xs:text-center bg-indigo-300 dark:bg-indigo-700 dark:text-indigo-200 flex flex-col justify-center items-center'>
