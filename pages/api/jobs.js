@@ -1,10 +1,12 @@
 export const jobs = [
   {
-    position: 'scrum master / consultant',
+    position: 'scrum master / devops consultant',
     company: 'CGI Federal',
     duration: 'august 2022 - present',
     duties: [
-      '- the next chapter!'
+      '- conduct project management for the Momentum Apprenticeship Program facilitating, organizing, and restructuring trainings, panels, and various learning opportunities.',
+      '- provide constant feedback through reviews, daily stand-ups, retrospectives, and metrics',
+      '- successfully implement solutions when bottlenecks in processes are found by communicating metrics to leaders to unblock developers and trainees'
     ]
   },
   {
