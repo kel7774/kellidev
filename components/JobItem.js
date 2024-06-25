@@ -6,7 +6,7 @@ export default function JobItem (props) {
       <h4 className='text-sm text-indigo-600 dark:text-indigo-50'><span>⏰</span>{' '}{props.duration}</h4>
       <ul className='mt-4'>
         {props.duties.map((duty, index) => (
-          <li className=' dark:text-indigo-50' key={index}>{duty}</li>
+          <li className=' dark:text-indigo-50 list-disc' key={index}>{duty}</li>
         ))}
       </ul>
     </div>

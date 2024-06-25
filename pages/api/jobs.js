@@ -1,12 +1,33 @@
 export const jobs = [
   {
-    position: 'scrum master / devops consultant',
-    company: 'CGI Federal',
+    position: 'certified safe scrum master',
+    company: 'cgi federal',
     duration: 'august 2022 - present',
     duties: [
-      '- conduct project management for the Momentum Apprenticeship Program facilitating, organizing, and restructuring trainings, panels, and various learning opportunities.',
-      '- provide constant feedback through reviews, daily stand-ups, retrospectives, and metrics',
-      '- successfully implement solutions when bottlenecks in processes are found by communicating metrics to leaders to unblock developers and trainees'
+      'removed over 30+ impediments effectively boosting team productivity, allowing for 20% more planning capacity',
+      'scheduled, implemented, and facilitated over 100 Scrum Ceremonies most notably PI planning where in less than 2 days, the team was able to accurately estimate stories, reduce risk, and summarize over 20 large objectives for over 3 months worth of planned work',
+      'frequently held backlog refinement ceremonies which reduced risks by 40% due to continuous and consistent discussion of stories, granular breakdown of epics, and accurately predicting impediments',
+      'guided and coached the team using agile principles accomplishing an increase in their agile maturity score by 15%'
+    ]
+  },
+  {
+    position: 'scrum master',
+    company: 'CGI Federal',
+    duration: 'august 2022 - march 2023',
+    duties: [
+      'successfully implemented the Momentum Apprenticeship Program, guiding over 30+ college graduates through a transformative journey of professional development and growth mindset adoption.',
+      'utilized agile methodology to ensure effective preparation of program participants for a seamless transition onto client teams, fostering their success and integration into the workforce.',
+      'reorganized the program by addressing scheduling conflicts, enhancing efficiency, forecasting staffing needs, and prioritizing active listening to participants&aps; concerns, ensuring a supportive and impactful learning environment.',
+    ]
+  },
+  {
+    position: 'inventory and logistics manager',
+    company: 'cajun crate, llc',
+    duration: 'october 2016 - present',
+    duties: [
+      'lead and manage all aspects of warehouse operations independently, including inventory management, logistics coordination, and purchase order administration, demonstrating exceptional leadership and self-reliance.',
+      'leverage data analytics and order forecasting techniques to make informed business decisions, ensuring optimal inventory levels and seamless operations, while operating autonomously.',
+      'adapt quickly to new software systems for efficient mail order processing, reflecting a high level of confidence and self-sufficiency in managing projects and driving business success.',
     ]
   },
   {
@@ -14,9 +35,9 @@ export const jobs = [
     company: 'turner industries',
     duration: 'september 2021 - june 2022',
     duties: [
-      '- refactored and released an internal legacy API management tool independently in less than 3 months',
-      '- successfully passed the Professional Scrum Master exam while contributing to frontend applications, reviewing PRs, and creating company coding standards documentation',
-      '- established a daily code-sharing habit among team members by utilizing IDE tools, planning daily pair-programming sessions, and communicating feedback'
+      'orchestrated and led the end-to-end refactoring and release of an internal legacy API management tool within a demanding timeframe of less than 3 months, showcasing exceptional project coordination, meticulous planning, and effective team management.',
+      'achieved Professional Scrum Master certification while actively contributing to frontend applications, reviewing pull requests, and driving the establishment of company coding standards documentation.',
+      'cultivated a collaborative environment by fostering a daily code-sharing practice among team members through the strategic utilization of IDE tools, planning and executing daily pair-programming sessions, and providing constructive feedback.'
     ]
   },
   {
@@ -24,9 +45,9 @@ export const jobs = [
     company: 'perficient, inc',
     duration: 'january 2021 - july 2021',
     duties: [
-      '- generated up to 5 highly detailed data visualizations outlining web performance to present to high priority client',
-      '- updated up to 20 processes using XLRelease to create higher efficiency within DevOps practice',
-      '- created several documents outlining release processes and explaining DevOps practice using Confluence'
+      'coordinated the generation of up to 5 meticulously crafted data visualizations, showcasing web performance metrics, and presenting them to high-priority clients, ensuring clear communication and effective decision-making.',
+      'implemented enhancements to DevOps practices by updating and optimizing up to 20 processes using XLRelease, resulting in improved efficiency, and streamlined workflows.',
+      'demonstrated strong project coordination skills by creating comprehensive documents outlining release processes and conveying the intricacies of DevOps practices using Confluence, enabling cross-functional teams to align their efforts and achieve project success.'
     ]
   },
   {
@@ -34,19 +55,19 @@ export const jobs = [
     company: 'gophr, inc',
     duration: 'september 2019 - july 2020',
     duties: [
-      '- released first iteration of internal MVP web application in less than 2 months with a team of less than 10 developers',
-      '- built and released the first iteration of MVP mobile application after 2 weeks of React Native courses',
-      '- refactored and released external MVP web application and educated team on current JavaScript and React standards for successful future refactor and development'
+      "led a team of about 10 developers to successfully release the company's inaugural iteration of an internal MVP web application within an impressive timeframe of less than 2 months, showcasing strong leadership, drive, and efficient project management in a dynamic startup environment.",
+      'demonstrated a remarkable ability to learn fast by building and launching the first iteration of an MVP mobile application within a mere 2 weeks, leveraging newly acquired skills from React Native courses, resulting in accelerated product development and meeting tight deadlines.',
+      'spearheaded the refactoring and release of an external MVP web application, exhibiting a commitment to excellence and knowledge sharing. successfully educated the team on current JavaScript and React standards, ensuring future refactor and development efforts align with best practices, fostering efficiency and growth.'
     ]
   },
   {
     position: 'junior web developer',
-    company: 'waitr, inc',
+    company: 'asap, formerly waitr, inc',
     duration: 'march 2019 - september 2019',
     duties: [
-      '- built and released the MVP of Waitr Impact, a social justice initiative with little supervision in less than 6 months immediately after boot camp completion',
-      '- collaborated with senior developer to successfully resolve bugs, add features, and improve design throughout external web platform',
-      '- documented and updated over 100 issues using JIRA and Confluence in less than 2 weeks which significantly decreased backlog refinement time for product owner and department'
+      "effectively managed and coordinated the development and release of Waitr Impact, the company's inaugural social justice initiative, within an impressive timeline of less than 6 months immediately after completing a boot camp. demonstrated exceptional project management, coordination, and leadership skills, delivering impactful results with minimal supervision.",
+      "collaborated closely with a senior developer to successfully troubleshoot and resolve bugs, implement new features, and enhance the design of an external web platform. proactively contributed to the project's success through effective communication, teamwork, and a commitment to excellence",
+      'exhibited strong organizational and efficiency skills by meticulously documenting and updating over 100 issues using JIRA and Confluence within a swift timeframe of less than 2 weeks. this significant contribution significantly reduced backlog refinement time for the product owner and department, fostering streamlined processes and productive collaborations.'
     ]
   }
 ]
