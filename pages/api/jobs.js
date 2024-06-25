@@ -1,12 +1,13 @@
 export const jobs = [
   {
-    position: 'devops engineer',
-    company: 'CGI Federal',
-    duration: 'march 2023 - present',
+    position: 'certified safe scrum master',
+    company: 'cgi federal',
+    duration: 'august 2022 - present',
     duties: [
-      'demonstrate persistence and attention to detail in executing DevOps tasks, ensuring the successful implementation and maintenance of complex systems with minimal errors and maximum efficiency.',
-      'proactively engage in independent research to stay updated with the latest industry trends, tools, and best practices, driving continuous improvement and innovation within the DevOps environment.',
-      'foster a culture of open feedback and collaboration, actively engaging with peers and supervisors to exchange insights, identify areas for improvement, and collectively plan for future work, including accurate estimation of timelines and resource allocation.'
+      'removed over 30+ impediments effectively boosting team productivity, allowing for 20% more planning capacity',
+      'scheduled, implemented, and facilitated over 100 Scrum Ceremonies most notably PI planning where in less than 2 days, the team was able to accurately estimate stories, reduce risk, and summarize over 20 large objectives for over 3 months worth of planned work',
+      'frequently held backlog refinement ceremonies which reduced risks by 40% due to continuous and consistent discussion of stories, granular breakdown of epics, and accurately predicting impediments',
+      'guided and coached the team using agile principles accomplishing an increase in their agile maturity score by 15%'
     ]
   },
   {
