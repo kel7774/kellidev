@@ -13,18 +13,18 @@ export default function MainNavigation () {
       <nav className='bg-indigo-50 dark:bg-indigo-800 shadow-inner p-3 sticky top-0 z-50 flex flex-row justify-between'>
 
         <div>
-          <Link href='/' className='inline-flex items-center p-2 mr-4'>
+          <Link href='/' className='inline-flex items-center py-2'>
             <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Kelli</span>
           </Link>
 
-          <Link href='/' className='inline-flex items-center p-2 mr-4'>
+          <Link href='/' className='inline-flex items-center py-2'>
             <span className='navBar font-nav text-indigo-600 dark:text-indigo-300 uppercase'>Landry</span>
           </Link>
 
           {colorTheme === "light" ? (
-            <button className="ml-2" onClick={() => setTheme("light")}>☀️</button>
+            <button className="pl-1" onClick={() => setTheme("light")}>☀️</button>
             ) : (
-            <button className="ml-2" onClick={() => setTheme("dark")}>🌚</button>
+            <button className="pl-1" onClick={() => setTheme("dark")}>🌚</button>
           )}
         </div>
 
