@@ -38,6 +38,9 @@ export default function MainNavigation () {
           <Link href='/cv'>
             <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>CV</span>
           </Link>
+          <Link href='/kelli-do'>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Do</span>
+          </Link>
           <Link href='/contact'>
             <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Contact</span>
           </Link>
