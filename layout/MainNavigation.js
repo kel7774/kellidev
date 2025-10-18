@@ -12,13 +12,13 @@ export default function MainNavigation () {
     <>
       <nav className='bg-indigo-50 dark:bg-indigo-800 shadow-inner p-3 sticky top-0 z-50 flex flex-row justify-between'>
 
-        <div>
+        <div className="xs:justify-start xs:flex xs:flex-row">
           <Link href='/' className='inline-flex items-center py-2'>
-            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Kelli</span>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1 xs:text-sm'>Kelli</span>
           </Link>
 
           <Link href='/' className='inline-flex items-center py-2'>
-            <span className='navBar font-nav text-indigo-600 dark:text-indigo-300 uppercase'>Landry</span>
+            <span className='navBar font-nav text-indigo-600 dark:text-indigo-300 uppercase xs:text-sm'>Landry</span>
           </Link>
 
           {colorTheme === "light" ? (
@@ -28,21 +28,21 @@ export default function MainNavigation () {
           )}
         </div>
 
-        <div>
+        <div className='xs:justify-end xs:flex xs:flex-row'>
           <Link href='/' className='inline-flex items-center p-2'>
-            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Home</span>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1 xs:text-sm'>Home</span>
           </Link>
           <Link href='/about'>
-            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>About</span>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1 xs:text-sm'>About</span>
           </Link>
           <Link href='/cv'>
-            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>CV</span>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1 xs:text-sm'>CV</span>
           </Link>
           <Link href='/kelli-do'>
-            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Do</span>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1 xs:text-sm'>Do</span>
           </Link>
           <Link href='/contact'>
-            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Contact</span>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1 xs:text-sm'>Contact</span>
           </Link>
         </div>
 
