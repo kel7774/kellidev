@@ -10,44 +10,38 @@ export default function MainNavigation () {
 
   return (
     <>
-      <nav className='flex items-center flex-wrap bg-indigo-50 dark:bg-indigo-800 shadow-inner p-3 sticky top-0 z-50'>
-        <Link href='/' className='inline-flex items-center p-2 mr-4'>
-          <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Kelli</span>
-        </Link>
+      <nav className='bg-indigo-50 dark:bg-indigo-800 shadow-inner p-3 sticky top-0 z-50 flex flex-row justify-between'>
 
-        <Link href='/' className='inline-flex items-center p-2 mr-4 lg:hidden'>
-          <span className='navBar font-nav text-indigo-600 dark:text-indigo-300 uppercase'>Landry</span>
-        </Link>
+        <div>
+          <Link href='/' className='inline-flex items-center p-2 mr-4'>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Kelli</span>
+          </Link>
 
-        {colorTheme === "light" ? (
-          <button className="ml-2" onClick={() => setTheme("light")}>☀️</button>
-          ) : (
-          <button className="ml-2" onClick={() => setTheme("dark")}>🌚</button>
-        )}
+          <Link href='/' className='inline-flex items-center p-2 mr-4 lg:hidden'>
+            <span className='navBar font-nav text-indigo-600 dark:text-indigo-300 uppercase'>Landry</span>
+          </Link>
 
-          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto uppercase navBar'>
-            <Link
-              href='/'
-              className='mr-2'
-            >
-              Home
-            </Link>
-            <Link
-              href='/about'
-            >
-              About
-            </Link>
-            <Link
-              href='/cv'
-            >
-              CV
-            </Link>
-            <Link
-              href='/contact'
-            >
-              Contact
-            </Link>
-          </div>
+          {colorTheme === "light" ? (
+            <button className="ml-2" onClick={() => setTheme("light")}>☀️</button>
+            ) : (
+            <button className="ml-2" onClick={() => setTheme("dark")}>🌚</button>
+          )}
+        </div>
+
+        <div>
+          <Link href='/' className='inline-flex items-center p-2 mr-4'>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Home</span>
+          </Link>
+          <Link href='/about'>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>About</span>
+          </Link>
+          <Link href='/cv'>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>CV</span>
+          </Link>
+          <Link href='/contact'>
+            <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Contact</span>
+          </Link>
+        </div>
 
       </nav>
     </>

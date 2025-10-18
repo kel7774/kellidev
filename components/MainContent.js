@@ -20,7 +20,7 @@ export default function MainContent () {
           className='rounded-lg'
         />
       </div>
-      <p className='text-lg text-center pb-5 lowercase dark:text-indigo-100'>
+      <p className='text-lg text-center pb-5 pl-2 pr-2 lowercase dark:text-indigo-100'>
         project manager | cajun | world traveler | lap swimmer | dog enthusiast
       </p>
     </section>
