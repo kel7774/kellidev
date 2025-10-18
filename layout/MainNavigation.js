@@ -17,7 +17,7 @@ export default function MainNavigation () {
             <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1'>Kelli</span>
           </Link>
 
-          <Link href='/' className='inline-flex items-center p-2 mr-4 lg:hidden'>
+          <Link href='/' className='inline-flex items-center p-2 mr-4'>
             <span className='navBar font-nav text-indigo-600 dark:text-indigo-300 uppercase'>Landry</span>
           </Link>
 
