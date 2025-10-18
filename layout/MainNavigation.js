@@ -29,7 +29,7 @@ export default function MainNavigation () {
         </div>
 
         <div className='xs:justify-end xs:flex xs:flex-row xs:items-baseline'>
-          <Link href='/' className='inline-flex items-center'>
+          <Link href='/'>
             <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1 xs:text-sm'>Home</span>
           </Link>
           <Link href='/about'>
