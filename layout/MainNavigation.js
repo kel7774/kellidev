@@ -10,7 +10,7 @@ export default function MainNavigation () {
 
   return (
     <>
-      <nav className='bg-indigo-50 dark:bg-indigo-800 shadow-inner p-3 sticky top-0 z-50 flex flex-row justify-between'>
+      <nav className='bg-indigo-50 dark:bg-indigo-800 shadow-inner p-3 xs:py-3 sticky top-0 z-50 flex flex-row justify-between'>
 
         <div className="xs:justify-start xs:flex xs:flex-row">
           <Link href='/' className='inline-flex items-center py-2'>
@@ -28,7 +28,7 @@ export default function MainNavigation () {
           )}
         </div>
 
-        <div className='xs:justify-end xs:flex xs:flex-row xs:content-center'>
+        <div className='xs:justify-end xs:flex xs:flex-row xs:items-center'>
           <Link href='/'>
             <span className='navBar font-bold text-indigo-800 dark:text-indigo-100 uppercase mx-1 xs:text-sm'>Home</span>
           </Link>
