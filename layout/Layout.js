@@ -3,12 +3,12 @@ import Footer from './Footer'
 
 export default function Layout({children}) {
   return (
-    <div className='font-sans'>
+    <main className='font-sans'>
       <MainNavigation />
-      <main className='min-h-screen bg-indigo-200 dark:bg-indigo-600'>
+      <div className='min-h-screen bg-indigo-200 dark:bg-indigo-600'>
         {children}
-      </main>
+      </div>
       <Footer />
-    </div>
+    </main>
   )
 }
