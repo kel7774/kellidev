@@ -63,24 +63,26 @@ export default function KelliDo() {
     }
 
   return (
-    <div  className='flex flex-col justify-center text-center m-auto w-1/3 xs:w-2/3'>
+    <div  className='flex flex-col justify-center text-center m-auto w-1/3 xs:w-2/3 pb-4
+    '>
       <NextSeo
         title="Kelli Landry - Kelli Do"
         description="Kelli Do, a page for Kelli Landry showcasing her skills and services for trade, barter, or payment."
         canonical="http://kellilandry.dev/kelli-do"
       />
         <header>
-            <h1 className="text-indigo-500 dark:text-indigo-200 text-2xl py-4 ">
+            <h1 className="text-indigo-600 dark:text-indigo-200 text-2xl py-4 ">
                 a different spin on the 🍯 honey-do
             </h1>
-            <h2 className="text-indigo-400 dark:text-indigo-100 text-xl py-4">
-                <u>kelli-do</u>, <em>noun</em>: a list of tasks or chores that <strong>kelli</strong> (that&apos;s me!) can complete, often related to home maintenance, improvement, getting rid of overwhelm, &amp; offering relief in the chaos.
+            <h2 className="text-indigo-500 dark:text-indigo-100 text-xl py-1">
+                <u>kelli-do</u>, <em>noun</em>: a list of tasks or chores that <strong>kelli</strong> (that&apos;s me! 👋) can do, often related to home maintenance, improvement, getting rid of overwhelm, &amp; offering relief in the chaos.
             </h2>
         </header>
 
         <section>
             <p className="dark:text-indigo-200 pb-4">while i have been known professionally as a programmer turned tech project manager, my services and skills span many areas. my pricing structure is flexible. some services are only local to where i live, but many are digital and can be done remotely.</p>
-            <p className="dark:text-indigo-200 pb-4">click on each area to see more & schedule a time to consult with me for us to work something out!</p>
+            <p className="dark:text-indigo-200 pb-4">click on each category to see more</p>
+            <p className='dark:text-indigo-200 pb-4'>if interested, feel free to <a href='https://calendly.com/landry-kel/30min' target='_blank' rel='noopener noreferrer' >schedule a consult</a> &amp; we&apos;ll negotiate pricing</p>
         </section>
 
         <section className="flex flex-col justify-center items-center">
@@ -101,7 +103,7 @@ export default function KelliDo() {
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handlePets}>Pets</button>
             <ul style={{ display: togglePets ? 'none' : 'block' }}>
                 {services[2].offers.map((item, index) => (
-                    <li key={index} className="dark:text-indigo-200 list-disc text-left w-auto">{item}</li>
+                    <li key={index} className="dark:text-indigo-200 list-disc text-left ">{item}</li>
                 ))}
             </ul>
 
