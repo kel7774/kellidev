@@ -13,18 +13,28 @@ function PostPreview({ posts }) {
           </div>
           <div className="xs:mt-5 xs:text-center">
             <p className='dark:text-indigo-50 mb-4'>📅 {formatDate(post.date)}</p>
-            <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]' passHref>
-              <a className='cursor-pointer font-bold text-4xl dark:text-indigo-50 dark:hover:text-indigo-300'>🖋 {post.title}</a>
+            <Link
+              key={post.id}
+              as={`/posts/${post.slug}`}
+              href='/posts/[slug]'
+              passHref
+              className='cursor-pointer font-bold text-4xl dark:text-indigo-50 dark:hover:text-indigo-300'>
+              🖋 {post.title}
             </Link>
             <p className='text-xl mb-4 dark:text-indigo-50'>{post.excerpt}</p>
-            <Link key={post.id} as={`/posts/${post.slug}`} href='/posts/[slug]' passHref>
-              <a className='cursor-pointer font-bold text-xl dark:text-indigo-50 underline hover:no-underline xs:pb-5'>read more</a>
+            <Link
+              key={post.id}
+              as={`/posts/${post.slug}`}
+              href='/posts/[slug]'
+              passHref
+              className='cursor-pointer font-bold text-xl dark:text-indigo-50 underline hover:no-underline xs:pb-5'>
+              read more
             </Link>
           </div>
         </section>
       ))}
     </div>
-  )
+  );
 }
 
 
