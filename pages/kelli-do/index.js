@@ -87,98 +87,98 @@ export default function KelliDo() {
 
         <section className="flex flex-col justify-center items-center">
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleCareer}>Career</button>
-            <ul style={{ display: toggleCareer ? 'none' : 'block' }}>
+            <ul style={{ display: toggleCareer ? 'none' : 'block', width: '50%' }}>
                 {services[0].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleHome}>Home</button>
-            <ul style={{ display: toggleHome ? 'none' : 'block' }}>
+            <ul style={{ display: toggleHome ? 'none' : 'block', width: '50%' }}>
                 {services[1].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handlePets}>Pets</button>
-            <ul style={{ display: togglePets ? 'none' : 'block' }}>
+            <ul style={{ display: togglePets ? 'none' : 'block', width: '50%'  }}>
                 {services[2].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left ">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleChildcare}>Childcare</button>
-            <ul style={{ display: toggleChildcare ? 'none' : 'block' }}>
+            <ul style={{ display: toggleChildcare ? 'none' : 'block', width: '50%' }}>
                 {services[3].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleTech}>Tech</button>
-            <ul style={{ display: toggleTech ? 'none' : 'block' }}>
+            <ul style={{ display: toggleTech ? 'none' : 'block', width: '50%'  }}>
                 {services[4].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleTravel}>Travel</button>
-            <ul style={{ display: toggleTravel ? 'none' : 'block' }}>
+            <ul style={{ display: toggleTravel ? 'none' : 'block', width: '50%'  }}>
                 {services[5].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleWeddings}>Weddings</button>
-            <ul style={{ display: toggleWeddings ? 'none' : 'block' }}>
+            <ul style={{ display: toggleWeddings ? 'none' : 'block', width: '50%'  }}>
                 {services[6].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleMoney}>Money</button>
-            <ul style={{ display: toggleMoney ? 'none' : 'block' }}>
+            <ul style={{ display: toggleMoney ? 'none' : 'block', width: '50%'  }}>
                 {services[7].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleMail}>Mail & Packages</button>
-            <ul style={{ display: toggleMail ? 'none' : 'block' }}>
+            <ul style={{ display: toggleMail ? 'none' : 'block', width: '50%'  }}>
                 {services[8].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleFitness}>Fitness & Wellness</button>
-            <ul style={{ display: toggleFitness ? 'none' : 'block' }}>
+            <ul style={{ display: toggleFitness ? 'none' : 'block', width: '50%'  }}>
                 {services[9].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleCar}>Car</button>
-            <ul style={{ display: toggleCar ? 'none' : 'block' }}>
+            <ul style={{ display: toggleCar ? 'none' : 'block', width: '50%'  }}>
                 {services[10].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleMedical}>Medical</button>
-            <ul style={{ display: toggleMedical ? 'none' : 'block' }}>
+            <ul style={{ display: toggleMedical ? 'none' : 'block', width: '50%'  }}>
                 {services[11].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleSmallBusiness}>Small Business</button>
-            <ul style={{ display: toggleSmallBusiness ? 'none' : 'block' }}>
+            <ul style={{ display: toggleSmallBusiness ? 'none' : 'block', width: '50%'  }}>
                 {services[12].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
             </ul>
 
             <button className=" bg-indigo-600 dark:bg-indigo-300 text-indigo-300 dark:text-indigo-700 p-3 my-2 rounded-md font-bold uppercase w-44 h-auto" onClick={handleMisc}>Misc</button>
-            <ul style={{ display: toggleMisc ? 'none' : 'block' }}>
+            <ul style={{ display: toggleMisc ? 'none' : 'block', width: '50%'  }}>
                 {services[13].offers.map((item, index) => (
                     <li key={index} className="dark:text-indigo-200 list-disc text-left">{item}</li>
                 ))}
