@@ -14,7 +14,7 @@ export default function LafayetteMaps () {
             <h3 className='text-lg text-center font-bold dark:text-indigo-50 mt-6 mb-6'>🆓ALWAYS FREE🆓</h3>
             <h3 className='text-lg text-center font-bold dark:text-indigo-50 mt-6 mb-6'>🚫NEVER PAYWALLED OR GATEKEPT🚫</h3>
             <h3 className='text-lg text-center font-bold dark:text-indigo-50 mt-6 mb-6'>🫶COMMUNITY SUGGESTIONS &amp; CORRECTIONS ENCOURAGED🫶</h3>
-            <h4 className='text-base text-center font-bold dark:text-indigo-50 mt-6 mb-6'>like my work &amp; want to support financially? here's an option to <a href="https://www.buymeacoffee.com/kellilandry" target="_blank" rel='nooopener noreferrer'>buy me a coffee ☕</a></h4>
+            <h4 className='text-base text-center font-bold dark:text-indigo-50 mt-6 mb-6'>like my work &amp; want to support financially? here&apos;s an option to <a href="https://www.buymeacoffee.com/kellilandry" target="_blank" rel='nooopener noreferrer'>buy me a coffee ☕</a></h4>
             <article>
 
               <a className='navBar font-nav font-bold text-indigo-600 dark:text-indigo-300 uppercase' href='https://www.google.com/maps/d/embed?mid=16ysIlsgTBOBAFQqijNO29D152qXI630&hl=en&ehbc=2E312F' target='_blank' rel='nooopener noreferrer'>do stuff edition</a>
