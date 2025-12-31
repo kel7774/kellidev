@@ -64,7 +64,7 @@ export default function KelliDo() {
           Tell Me <span className="text-frog-green">More</span>
         </h1>
         <p className="text-center font-geist text-lg mb-12 opacity-80">
-          <p className=''><span>👩🏻‍💻</span> Professionally, I'm a project manager for software developers - a <em>Scrum Master</em>. That sounds like a character right out of a video game, but I guarantee you that it&apos;s far simpler than that - I just make sure software gets shipped out to users.</p> 
+          <p className=''><span>👩🏻‍💻</span> Professionally, I&apos;m a project manager for software developers - a <em>Scrum Master</em>. That sounds like a character right out of a video game, but I guarantee you that it&apos;s far simpler than that - I just make sure software gets shipped out to users.</p> 
           <p><span>🎂</span>In 2026, I&apos;ll make the milestone of <strong>10 years</strong> in the tech industry. Though I&apos;ve gained countless skills in my career, much of my strengths shine in working with people. Talking to them, collaborating, listening, forming plans, delegating tasks, analyzing data -- all the corporate buzzwords.</p>
           <p><span>🤝</span> My work in <strong>Kelli-Do&apos;s</strong> is much like working in tech as a Scrum Master - I&apos;m a helper, facilitator, purveyor of a plan among the chaos, &amp; go-to generalist in the moment you decide to ask for a helping hand.</p>
         </p>

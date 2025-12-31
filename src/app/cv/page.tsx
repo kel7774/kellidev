@@ -68,7 +68,7 @@ return (
             Professional Summary
           </h2>
           <p className="font-geist leading-relaxed">
-           After 10 years in the tech industry, holding various roles that span development and leadership, my true calling is always with <strong>helping others</strong>. Shipping software doesn&apos;t have to be onerous, complicated, or stale. With a <strong>servant leadership mindset</strong> and empathetic approach, I lead teams with authentic collaboration in order to deliver value consistently while <strong>building trust and positive rapport</strong> with a heavy dose of fun along the way. Results are important; so is your team's <strong>well-being</strong>. I believe in balance, genuine communication, respect for all voices, and accountability. My goal is to <strong>coach</strong> a team, not just manage one. Let&apos;s build something better!
+           After 10 years in the tech industry, holding various roles that span development and leadership, my true calling is always with <strong>helping others</strong>. Shipping software doesn&apos;t have to be onerous, complicated, or stale. With a <strong>servant leadership mindset</strong> and empathetic approach, I lead teams with authentic collaboration in order to deliver value consistently while <strong>building trust and positive rapport</strong> with a heavy dose of fun along the way. Results are important; so is your team&apos;s <strong>well-being</strong>. I believe in balance, genuine communication, respect for all voices, and accountability. My goal is to <strong>coach</strong> a team, not just manage one. Let&apos;s build something better!
           </p>
         </section>
 
