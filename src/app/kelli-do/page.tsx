@@ -76,7 +76,7 @@ export default function KelliDo() {
         <p className='mt-4'>Click the <strong>categories</strong> below to see services offered, and if interested, click the button below to schedule a meeting with me to discuss a plan.</p>
         </p>
         <div className='text-center mb-12'>
-          <Link href="https://calendly.com/landry-kel/30min" target="_blank" rel="noopener noreferrer">
+          <Link href="https://calendly.com/landry-kel/30min" target="_blank" rel="noopener noreferrer" passHref>
             <button className="bg-frog-green text-black-forest px-6 py-3 rounded-full font-bold hover:bg-frog-green/80 transition-colors">Get Scheduled</button>
           </Link>
         </div>
