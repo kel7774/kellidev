@@ -1,6 +1,5 @@
 'use client';
 
-import { NextSeo } from "next-seo";
 import { useState } from 'react';
 import Link from "next/link";
 
@@ -46,11 +45,6 @@ export default function KelliDo() {
   };
   return (
     <div className="min-h-screen py-16 px-6">
-        <NextSeo
-            title="Kelli Landry - Kelli Do"
-            description="Kelli Do, a page for Kelli Landry showcasing her skills and services for trade, barter, or payment."
-            canonical="http://kellilandry.dev/kelli-do"
-        />
       <div className="max-w-3xl mx-auto">
 
         <h1 className="text-4xl md:text-5xl font-cabinet font-bold mb-4 text-center">
