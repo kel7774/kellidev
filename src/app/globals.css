@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black-forest: #0C1E00;
+  --color-frog-green: #A7C295;
+  --color-sage-light: #C5D4B8;
+  --color-sage-dark: #8BAF78;
+  --color-cream: #F5F5F0;
+  
+  --font-family-cabinet: 'Cabinet Grotesk', sans-serif;
+  --font-family-geist: 'Geist', sans-serif;
+  --font-family-geist-mono: 'Geist Mono', monospace;
+}
+
+:root {
+  /* Light mode colors */
+  --black-forest: #0C1E00;
+  --frog-green: #A7C295;
+  --sage-light: #C5D4B8;
+  --sage-dark: #8BAF78;
+  --cream: #F5F5F0;
+  
+  --background: #FFFFFF;
+  --foreground: var(--black-forest);
+  --card-bg: var(--cream);
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --accent: var(--frog-green);
+  --accent-dark: var(--sage-dark);
+}
+
+[data-theme='dark'] {
+  --background: var(--black-forest);
+  --foreground: #FFFFFF;
+  --card-bg: #1a2a14;
+  --nav-bg: rgba(12, 30, 0, 0.95);
+  --accent: var(--frog-green);
+  --accent-dark: var(--sage-light);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Font utilities */
+.font-cabinet {
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.font-geist {
+  font-family: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Color utilities */
+.text-black-forest { color: #0C1E00; }
+.text-frog-green { color: #A7C295; }
+.text-sage-light { color: #C5D4B8; }
+.text-sage-dark { color: #8BAF78; }
+.text-cream { color: #F5F5F0; }
+
+.bg-black-forest { background-color: #0C1E00; }
+.bg-frog-green { background-color: #A7C295; }
+.bg-sage-light { background-color: #C5D4B8; }
+.bg-sage-dark { background-color: #8BAF78; }
+.bg-cream { background-color: #F5F5F0; }
+
+.border-black-forest { border-color: #0C1E00; }
+.border-frog-green { border-color: #A7C295; }
+.border-sage-light { border-color: #C5D4B8; }
+
+.hover\:text-frog-green:hover { color: #A7C295; }
+.hover\:text-sage-dark:hover { color: #8BAF78; }
+.hover\:bg-frog-green:hover { background-color: #A7C295; }
+.hover\:bg-sage-dark:hover { background-color: #8BAF78; }
+
+/* Smooth transitions */
+.transition-theme {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Accordion animation */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+}
+
+.accordion-content.open {
+  max-height: 500px;
+  opacity: 1;
+  transition: max-height 0.5s ease-in, opacity 0.3s ease-in;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--frog-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sage-dark);
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
+}

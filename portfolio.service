@@ -1,0 +1,16 @@
+[Unit]
+Description=Kelli Landry Portfolio Website
+After=network.target
+
+[Service]
+Type=simple
+User=exedev
+WorkingDirectory=/home/exedev/kelli-portfolio
+Environment=NODE_ENV=production
+Environment=PORT=8000
+ExecStart=/usr/bin/npm run start
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
