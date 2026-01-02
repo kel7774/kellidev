@@ -67,6 +67,9 @@ export default function Navbar() {
             <Link href="/kelli-do" className="font-geist hover:text-frog-green transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Do
             </Link>
+            <Link href="/lafayette-lowdown-maps" className="font-geist hover:text-frog-green transition-colors">
+              Maps
+            </Link>
             <Link href="/contact" className="font-geist hover:text-frog-green transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Contact
             </Link>
